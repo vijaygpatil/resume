@@ -1,0 +1,248 @@
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navbar{
+    width:100%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.navbar-nav {
+	display: inline-block;
+    float: none;
+}
+
+.navbar-nav>li>a {
+	padding-bottom: 0 !important;
+}
+
+span.hidden-xs {
+	display: inline !important;
+}
+
+/* ==========================================================================
+  Layout 
+   ========================================================================== */
+#page-contact {
+	padding: 50px 0;
+	background: #f7f7f7;
+}
+
+#page-contact header h2 {
+	text-align: center;
+}
+
+#page-portfolio {
+	padding: 50px 0;
+	background: #fff;
+}
+
+#page-portfolio header h2 {
+	text-align: center;
+}
+
+#page-experience {
+	padding: 50px 0;
+	background: #f7f7f7;
+}
+
+#page-experience header h2 {
+	text-align: center;
+}
+
+#page-education {
+	padding: 50px 0;
+	background: #fff;
+}
+
+#page-education header h2 {
+	text-align: center;
+}
+
+#page-skills {
+	padding: 50px 0;
+	background: #f7f7f7;
+}
+
+#page-skills header h2 {
+	text-align: center;
+}
+
+#page-profile {
+	padding: 50px 0;
+	background: #fff;
+}
+
+#page-profile header h2 {
+	text-align: center;
+}
+
+#page-welcome {
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+
+#page-welcome header {
+	color: #fff;
+	padding-top: 23%;
+}
+
+#page-welcome header h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 4.5em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+#page-welcome header p {
+	font-size: 2em;
+	display: inline-block;
+	margin-bottom: 5px;
+	padding: 0 8px;
+	letter-spacing: 0.1em;
+	line-height: 3em;
+	text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+html,body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: ‘Lucida Console’, Monaco, monospace;
+	font-weight: 700;
+}
+
+article {
+	background: url('../img/divider.png') no-repeat center -60px;
+	background-size: 100%;
+	padding: 20px 0;
+}
+
+/* ==========================================================================
+   Social icons
+   ========================================================================== */
+.social-icons {
+	padding-top: 10px;
+	margin-bottom: 35px;
+}
+
+.social-icons .btn {
+	margin-right: 15px;
+}
+
+.btn-round {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	padding: 0;
+	border: 1px solid #fff;
+}
+
+.btn-round i {
+	font-size: 20px;
+	top: 15px;
+	position: relative;
+}
+
+.btn.btn-clear {
+	color: #fff;
+	font-weight: bold;
+	opacity: 0.6;
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	transition-property: transform;
+}
+
+.btn.btn-clear:hover,.btn.btn-clear.selected {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
+
+.btn-twitter {
+	background-color: #2BA9E0;
+}
+
+.btn-facebook{
+	background-color: #204385;
+}
+
+.btn-linkedin {
+	background-color: #015786;
+}
+
+.btn-google {
+	background-color: #D3492C;
+}
+
+.btn-youtube {
+	background-color: #C4302B;
+}
+
+.btn-github {
+	background-color: #171515;
+}
+
+.page-contact .social-icons {
+	margin-bottom: auto;
+	padding-top: 0;
+}
+
+.page-contact .social-icons .btn {
+	margin-right: 0px;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+.contact-me {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;	
+}
+
+.contact-me:hover {
+	border-color: #fff;
+	color: #3498db;
+}
+
+#messageSuccess, #messageError{
+	display:none;
+}
+/* ==========================================================================
+   Dividers
+   ========================================================================== */
+.section-title {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 5px;
+	color: #555555;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
