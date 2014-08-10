@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
+    <body>
+        <div th:fragment="contact">
+            <div class="container">
+	            <header>
+	                <h2 class="section-title"><i class="fa fa-envelope"></i> Contact</h2>
+	            </header>
+	            
+	            <article class="col-lg-12">
+	                <div class="row">
+	                    <div id="messageSuccess" class="col-sm-12">
+	                        <div class="alert alert-success">
+	                            <i class="fa fa-check-circle"></i> Thank you for contacting me. I'll try and get back to you as soon as possible.
+	                        </div>
+	                    </div>
+	                    <div id="messageError" class="col-sm-12">
+	                        <div class="alert alert-danger">
+	                            <i class="fa fa-exclamation-circle"></i> An unexpected error occured! Please try again after some time.
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-5 contact-info">
+	                        <h3>Contact Info</h3>
+	                        <p><i class="fa fa-map-marker"></i> 15464 West 128th Street, Olathe, KS 66062</p>
+	                        <p><i class="fa fa-phone"></i> (312) 498-2634</p>
+	                        <p><i class="fa fa-envelope-o"></i> patilvijayg@gmail.com</p>
+	                        <div class="social-icons">
+	                            <a target="_blank" href="https://twitter.com/patilvijayg" class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
+	                            <a target="_blank" href="https://www.facebook.com/patilvijayg" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
+	                            <a target="_blank" href="https://www.linkedin.com/in/patilvijayg" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
+	                            <a target="_blank" href="https://plus.google.com/+VijayPatilG" class="btn btn-round btn-clear btn-google"><i class="fa fa-google-plus"></i></a>
+	                        </div>
+	                    </div>
+	                    <div class="col-sm-7">
+	                        <h3>Get in Touch</h3>
+	                        <form class="form-horizontal" id="contact-form" role="form">
+	                            <div class="form-group">
+	                                <label class="col-sm-2 control-label" for="name">Name <sup><i class="fa fa-asterisk text-danger small"></i></sup></label>
+	                                <div class="col-sm-10">
+	                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required="required" maxlength="50" aria-required="true" autocorrect="off" autocapitalize="words" spellcheck="false"/>
+	                                </div>
+	                            </div>
+	                            
+	                            <div class="form-group">
+	                                <label for="email" class="col-sm-2 control-label">Email <sup><i class="fa fa-asterisk text-danger small"></i></sup></label>
+	                                <div class="col-sm-10">
+	                                    <input type="email" class="form-control" id="email" placeholder="Your email address" required="required" maxlength="100" aria-required="true" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+	                                </div>
+	                            </div>
+	                            
+	                            <div class="form-group">
+	                                <label for="phone" class="col-sm-2 control-label">Phone</label>
+	                                <div class="col-sm-10">
+	                                    <input type="text" class="form-control" id="phone"/>
+	                                </div>
+	                            </div>
+	                            
+	                            <div class="form-group">
+	                                <label for="message" class="col-sm-2 control-label">Message <sup><i class="fa fa-asterisk text-danger small"></i></sup></label>
+	                                <div class="col-sm-10">
+	                                    <textarea name="message" id="message" class="form-control" required="required" maxlength="5000" rows="10" aria-required="true" autocorrect="off" autocapitalize="off" spellcheck="true"></textarea>
+	                                </div>
+	                            </div>
+	                            
+	                            <div class="form-group">
+	                                <div class="col-sm-offset-2 col-sm-10">
+	                                    <button id="sendMessage" class="btn btn-primary"><i class="fa fa-envelope"></i> Send Email</button>
+	                                    <button type="reset" class="btn btn-default"><i class="fa fa-undo"></i> Reset</button>
+	                                </div>
+	                            </div>
+	                        </form>
+	                    </div>
+	                </div>
+	            </article>
+	        </div>
+        </div>
+    </body>
+</html>

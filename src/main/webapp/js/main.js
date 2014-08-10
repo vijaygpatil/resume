@@ -2,10 +2,19 @@ $(document).ready(function() {
 	$.vegas('slideshow', {
 		backgrounds : [ {
 			src : 'img/slider/01.jpeg',
-			fade : 3000
+			fade : 1000
 		}, {
 			src : 'img/slider/02.jpeg',
-			fade : 3000
+			fade : 1000
+		}, {
+			src : 'img/slider/03.jpeg',
+			fade : 1000
+		}, {
+			src : 'img/slider/04.jpeg',
+			fade : 1000
+		}, {
+			src : 'img/slider/05.jpeg',
+			fade : 1000
 		}]
 	})('overlay', {
 		src : 'img/overlays/04.png'
