@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class HomeController {
 
@@ -25,10 +22,12 @@ public class HomeController {
 	@Autowired
 	private SimpleMailMessage simpleMailMessage;
 
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String redirectToHome(Model model) {
+		return "redirect:/home";
+	}
+	
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String home(Model model) {
 		logger.info("Welcome home!");
 		model.addAttribute("emailObject", new EmailObject());
@@ -37,6 +36,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/sendEmail", method = RequestMethod.POST)
 	public String doSendEmail(@ModelAttribute("emailObject") EmailObject emailObject, Model model) {
+		
 		String recipientName = emailObject.getName();
 		String recipientAddress = emailObject.getEmail();
 		String phone = emailObject.getPhone();
@@ -44,7 +44,12 @@ public class HomeController {
 		
 		simpleMailMessage.setFrom(recipientAddress);
 		simpleMailMessage.setText("Name: "+recipientName +" Email: "+recipientAddress+" Phone: "+phone+" Message: "+message);
-		mailSender.send(simpleMailMessage);
-		return "home";
+		try {
+			mailSender.send(simpleMailMessage);
+			model.addAttribute("status", "success");
+		} catch(Exception e) {
+			model.addAttribute("status", "error");
+		}
+		return "redirect:/home#page-contact";
 	}
 }

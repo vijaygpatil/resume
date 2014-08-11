@@ -9,19 +9,18 @@
 	            
 	            <article class="col-lg-12">
 	                <div class="row">
-	                    <div id="messageSuccess" class="col-sm-12">
+	                    <div id="messageSuccess" class="col-sm-12" th:if="${#httpServletRequest.getParameter('status') == 'success'}">
 	                        <div class="alert alert-success">
 	                            <i class="fa fa-check-circle"></i> Thank you for contacting me. I'll try and get back to you as soon as possible.
 	                        </div>
 	                    </div>
-	                    <div id="messageError" class="col-sm-12">
+	                    <div id="messageError" class="col-sm-12" th:if="${#httpServletRequest.getParameter('status') == 'error'}">
 	                        <div class="alert alert-danger">
 	                            <i class="fa fa-exclamation-circle"></i> An unexpected error occured! Please try again after some time.
 	                        </div>
 	                    </div>
 	                    <div class="col-sm-5 contact-info">
 	                        <h3>Contact Info</h3>
-	                        <p><i class="fa fa-map-marker"></i> 15464 West 128th Street, Olathe, KS 66062</p>
 	                        <p><i class="fa fa-phone"></i> (312) 498-2634</p>
 	                        <p><i class="fa fa-envelope-o"></i> patilvijayg@gmail.com</p>
 	                        <div class="social-icons">
