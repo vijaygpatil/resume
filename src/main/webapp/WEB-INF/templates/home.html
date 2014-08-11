@@ -13,8 +13,7 @@
 		<link rel="stylesheet" th:href="@{/css/main.css}"/>
 	</head>
 	<body>
-		<div class="container" th:include="navigation :: menu"/>
-		
+		<div class="container" th:include="navigation :: menu"/> 
 		<section id="page-welcome" class="page-welcome" th:include="welcome :: welcome"/>
 		<section id="page-profile" class="page-profile" th:include="profile :: profile"/>	
 		<section id="page-skills" class="page-skills" th:include="skills :: skills"/>
@@ -28,5 +27,6 @@
 		<script th:src="@{/js/bootstrap.min.js}"></script>
 		<script th:src="@{/js/jquery.vegas.min.js}"></script>
 		<script th:src="@{/js/main.js}"></script>
+		
 	</body>
 </html>

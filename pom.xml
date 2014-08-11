@@ -147,7 +147,14 @@
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-springsecurity3</artifactId>
             <version>${thymeleaf.security.version}</version>
-        </dependency>        
+        </dependency>
+        
+        <!-- Mail -->
+        <dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>mail</artifactId>
+		    <version>1.4</version>
+		</dependency>       
 	</dependencies>
     <build>
         <plugins>

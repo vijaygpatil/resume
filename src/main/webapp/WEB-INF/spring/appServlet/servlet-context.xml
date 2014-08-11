@@ -22,14 +22,12 @@
 	<mvc:resources location="/js/" mapping="/js/**" />
 	<mvc:resources location="/fonts/" mapping="/fonts/**" />
 
-
 	<!-- **************************************************************** -->
 	<!-- SPRING ANNOTATION PROCESSING                                     -->
 	<!-- **************************************************************** -->
 	
 	<mvc:annotation-driven />
 	<context:component-scan base-package="com.patilvijayg.resume" />
-
 
 	<!-- **************************************************************** -->
 	<!-- THYMELEAF-SPECIFIC ARTIFACTS                                     -->
@@ -50,4 +48,27 @@
 	<bean class="org.thymeleaf.spring3.view.ThymeleafViewResolver">
 		<property name="templateEngine" ref="templateEngine" />
 	</bean>
+	
+	<!-- **************************************************************** -->
+    <!-- SET default mail properties                                      -->
+    <!-- **************************************************************** -->
+    
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com"/>
+        <property name="port" value="587"/>
+        <property name="username" value="patilvijayg@gmail.com"/>
+        <property name="password" value="Sn0wball"/>
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+            </props>
+        </property>
+    </bean>
+     
+    <bean id="simpleMailMessage" class="org.springframework.mail.SimpleMailMessage">
+        <property name="to" value="patilvijayg@gmail.com"></property>
+        <property name="subject" value="Hello"></property>
+    </bean>
 </beans>
