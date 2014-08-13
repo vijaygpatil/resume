@@ -1,15 +1,94 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
-    <body>
-        <div th:fragment="profile">
-            <div  class="container">
-	            <header>
-	                <h2 class="section-title"><i class="fa fa-user"></i> Personal Profile</h2>
-	            </header>
-	            
-	            <article class="col-lg-12">
-	            </article>
-	        </div>
-        </div>
-    </body>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="profile">
+		<div class="container">
+			<header>
+				<h2 class="section-title">
+					<i class="fa fa-user"></i> Personal Profile
+				</h2>
+			</header>
+
+			<article class="col-sm-12">
+				<div class="row profile-content">
+					<div class="col-sm-3">
+						<div class="profile-img">
+							<img th:src="@{/img/profile.jpeg}" alt="profile" />
+						</div>
+						<div class="profile-info">
+						  <h4>My Favorites:</h4>
+						  <h6>Activities:</h6>
+						  <p>Listening to Music, Cooking, Movies, Going to places, Long Drives, Programming, Swimming, Jet Skiing, Bowling.</p>
+						 </div>
+					</div>
+					<div class="col-sm-9 justify-text">
+						<p>I am a July 29th born and that makes me Leo. And yes I am a
+							true leo who likes to be lavish, loving, charming, magnanimous,
+							creative, faithful and honest. Go straight and turn right is
+							always what I strive for. I don’t like to settle for second best
+							anytime. I only want the best which can cause lavish excessive
+							spendings to me but I like to enjoy the life of luxury.</p>
+						<p>I currently work at Garmin International as Application
+							Developer. I am a Computer Science professional and have a
+							Masters Degree in Computer Science with specialization in
+							Software Engineering. I did my masters at Illinois Institute of
+							Technology, Chicago.</p>
+						<p>I am very passionate about Java programming. I like to read
+							about new technologies and how these technologies simplify human
+							life. I have a good collection of music which I like to carry
+							with me always. If I am in a good mood, I can cook awesome. I can
+							watch movies back to back if I have to kill time. I like to keep
+							my own collection of movies. I like to go on long drives
+							sometimes. I love to go to different places and have fun. I like
+							swimming and bowling too. I can read books only if it gives me
+							some real knowledge. I don’t like to read fiction.</p>
+						<p>I was born in Maharashtra, India. My dad is a state
+							government officer and my mom is a housewife. I have a elder
+							sister and a younger brother. My sister, Hemalata is married and
+							she has a boy. She teaches in a school. My brother, Dhiraj is
+							also married and has a girl. He supervises horticulture for a
+							very good hotel in Pune, Maharashtra. I feel sad that none of
+							them are here with me. I love them so much.</p>
+						<p>I did my schooling in a school named Vidya Niketan, in a
+							small town by name Dombivali in Maharashtra. I never used to get
+							good grades in Vidya Niketan because all day play and no study is
+							the only thing I did in school. Later I realized that everyone
+							has to be serious in life. I managed to get good grades in Higher
+							Secondary School and got into a entirely new world of college. I
+							got into a good University College - K J Somaiya College of
+							Engineering to pursue my Bachelors Degree.</p>
+						<p>Life as a undergrad was fun. I realize that those four
+							years were the most wonderful years of my life. They were full of
+							ups and downs, successes and failures, creativity and blunders.
+							Besides the undergrad studies, I use to get myself involved into
+							small electronic projects. FM transmitter, Clap Switch,
+							Electronic greeting card with a Happy Birthday tune in it,
+							repairing a broken speaker - it was all fun and exciting. Friends
+							were the best part. I met some life time friends in Somaiya.</p>
+						<p>After college I went to Banglore for my first job as a
+							software developer. First job is always exciting for everyone.
+							Bangalore was a blast. I had money to spend. Shopping malls,
+							movies, night clubs, picnics, restaurants was life. If I have to
+							return back to India, Bangalore is the place I would live rest of
+							my life. After 2 years of job I realized that my knowledge of
+							software was insufficient to excel in this field. So I shifted my
+							gears and landed in United States to do Masters in Computer
+							Science at Illinois Institute of Technology in Chicago.</p>
+						<p>My early days in Chicago were bit hectic because I had to
+							study and do job as well so that I could incur some of my
+							expenses. It was bit difficult to get back to studies after 2
+							years of job but I was glad I could get good grades. Met some new
+							friends at IIT. I never felt alone in this big country.</p>
+						<p>Life here in US is very fast. I have completed my Masters
+							and I am already more than 2 years experienced here. I presently
+							work as a Application developer in Garmin International. I guess
+							I am used to this fast and hectic life now. I regret that the
+							golden days of college have gone but I am excited of new
+							challenges and opportunities ahead. Happy-Sad me.</p>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</body>
 </html>
