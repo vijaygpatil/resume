@@ -3,26 +3,73 @@
 <body>
 	<div th:fragment="profile">
 		<div class="container">
-			<header>
-				<h2 class="section-title">
-					<i class="fa fa-user"></i> Personal Profile
-				</h2>
-			</header>
+			<header><h2 class="section-title"><i class="fa fa-user"></i> Personal Profile</h2></header>
 
 			<article class="col-sm-12">
 				<div class="row profile-content">
+				    
+				    <div class="well well-lg col-sm-12 ">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-primary"><i class="fa fa-download"> Print Resume</i></button>
+                        </div>
+                        <div class="col-sm-offset-3">
+                            <h5>Vijay Patil * <span id="myAge"></span></h5> 
+	                        <h6><i class="fa fa-globe"> USA</i></h6>
+	                        <h6><i class="fa fa-language"> English, Hindi, Marathi, Gujarati</i></h6>
+	                    </div>
+				    </div>
+				    <div class="profile-img">
+                       <img th:src="@{/img/profile.jpeg}" alt="profile" />
+                   </div>
+				    
+				    
+				    
+				    
+				    
+				    <!--  -->
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
+				    
 					<div class="col-sm-3">
-						<div class="profile-img">
-							<img th:src="@{/img/profile.jpeg}" alt="profile" />
-						</div>
-						<div class="profile-info">
-						  <h4>My Favorites:</h4>
-						  <h6>Activities:</h6>
-						  <p>Listening to Music, Cooking, Movies, Going to places, Long Drives, Programming, Swimming, Jet Skiing, Bowling.</p>
-						 </div>
+						
 					</div>
-					<div class="col-sm-9 justify-text">
-						<p>I am a July 29th born and that makes me Leo. And yes I am a
+					<div class="col-sm-9">
+					   <div class="col-sm-3">
+					   
+					   </div>
+					   <div class="col-sm-6">
+					   
+					   </div>
+					
+					
+					
+					
+					
+					
+					
+						<!-- <p>I am a July 29th born and that makes me Leo. And yes I am a
 							true leo who likes to be lavish, loving, charming, magnanimous,
 							creative, faithful and honest. Go straight and turn right is
 							always what I strive for. I don’t like to settle for second best
@@ -84,7 +131,7 @@
 							work as a Application developer in Garmin International. I guess
 							I am used to this fast and hectic life now. I regret that the
 							golden days of college have gone but I am excited of new
-							challenges and opportunities ahead. Happy-Sad me.</p>
+							challenges and opportunities ahead. Happy-Sad me.</p> -->
 					</div>
 				</div>
 			</article>

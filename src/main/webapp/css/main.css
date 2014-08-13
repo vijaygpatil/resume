@@ -109,18 +109,37 @@ span.hidden-xs {
 }
 
 #page-profile .profile-img{
-    border: 5px solid #333;
-    width:250px;
-    height:250px;
-    margin: 0 0 20px 0;
+    border: 1px solid #000;
+    width:242px;
+    height:242px;
+    position:absolute;
+    top:24px;
+    left:24px;
 }
 
 #page-profile .profile-content{
     margin: 20px 0 20px 0;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+#page-profile .well{
+    position:relative;
+    top:0;
+    left:0;
 }
 
 #page-profile .justify-text {
 	text-align: justify;
+}
+
+#page-profile #myAge {
+	color: #A4A4A4 !important;
+}
+
+#page-profile h6 {
+	color: #A4A4A4 !important;
 }
 /* ==========================================================================
    Base styles

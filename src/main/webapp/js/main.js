@@ -81,5 +81,12 @@ $(document).ready(function() {
 	$('#page-welcome header p').addClass('animated fadeInRightBig');
 	$('.social-icons').addClass('animated fadeInLeftBig');
 	$('.contact-me').addClass('animated fadeInUpBig');
+	
+	
+	var myBirthDay = new Date(1982, 6, 29);
+	var today = new Date();
+	var oneYearInMillSecs = 1000*60*60*24*365
+	var myAge = Math.floor((today.getTime()-myBirthDay.getTime())/(oneYearInMillSecs));
+	$('#myAge').text(myAge);
 });
 
