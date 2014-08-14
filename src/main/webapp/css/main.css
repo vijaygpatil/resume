@@ -134,10 +134,6 @@ span.hidden-xs {
 	text-align: justify;
 }
 
-#page-profile #myAge {
-	color: #7C7B7B !important;
-}
-
 #hindiLanguage {
 	color: #428bca !important;
 	cursor:pointer;
@@ -164,6 +160,27 @@ span.hidden-xs {
 #gujaratiLanguage:hover {
     color: #2a6496 !important;
 }
+
+.zodiacSign {
+	height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 33px;
+    left: 468px;
+}
+
+.zodiacSign img{
+    height:25px;
+    width: 25px;
+}
+
+#page-profile .borderless td {
+	border:none;
+}
+
+#page-profile .profile-topic {
+    border-bottom: 1px solid #BCBCBC;
+}
 /* ==========================================================================
    Base styles
    ========================================================================== */
@@ -184,9 +201,9 @@ h2,h3,h4,h5,h6 {
 }
 
 article {
-	background: url('../img/divider.png') no-repeat center -60px;
+	/* background: url('../img/divider.png') no-repeat center -60px;
 	background-size: 100%;
-	padding: 20px 0;
+	padding: 20px 0; */
 }
 
 /* ==========================================================================
