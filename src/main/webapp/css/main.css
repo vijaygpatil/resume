@@ -135,11 +135,34 @@ span.hidden-xs {
 }
 
 #page-profile #myAge {
-	color: #A4A4A4 !important;
+	color: #7C7B7B !important;
 }
 
-#page-profile h6 {
-	color: #A4A4A4 !important;
+#hindiLanguage {
+	color: #428bca !important;
+	cursor:pointer;
+}
+
+#hindiLanguage:hover {
+	color: #2a6496 !important;
+}
+
+#marathiLanguage {
+    color: #428bca !important;
+    cursor:pointer;
+}
+
+#marathiLanguage:hover {
+    color: #2a6496 !important;
+}
+
+#gujaratiLanguage {
+    color: #428bca !important;
+    cursor:pointer;
+}
+
+#gujaratiLanguage:hover {
+    color: #2a6496 !important;
 }
 /* ==========================================================================
    Base styles

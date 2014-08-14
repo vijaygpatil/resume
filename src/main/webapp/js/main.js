@@ -88,5 +88,17 @@ $(document).ready(function() {
 	var oneYearInMillSecs = 1000*60*60*24*365
 	var myAge = Math.floor((today.getTime()-myBirthDay.getTime())/(oneYearInMillSecs));
 	$('#myAge').text(myAge);
+	
+	$('#marathiLanguage').on('click', function(){
+		window.open('http://en.wikipedia.org/wiki/Marathi_language');
+	});
+	
+	$('#gujaratiLanguage').on('click', function(){
+		window.open('http://en.wikipedia.org/wiki/Gujarati_language');
+	});
+	
+	$('#hindiLanguage').on('click', function(){
+		window.open('http://en.wikipedia.org/wiki/Hindi_language');
+	});
 });
 
