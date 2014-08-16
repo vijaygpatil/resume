@@ -86,21 +86,6 @@ span.hidden-xs {
 	color: #ffffff;
 }
 
-#page-profile .profile-img{
-    /* border: 1px solid #000; */
-    width:242px;
-    height:242px;
-    position:absolute;
-    top:24px;
-    left:24px;
-}
-
-#page-profile .profile-content{
-    position:relative;
-    top:0;
-    left:0;
-}
-
 #page-profile .well{
     position:relative;
     top:0;
@@ -110,6 +95,10 @@ span.hidden-xs {
 
 #page-profile .justify-text {
 	text-align: justify;
+}
+
+#page-profile h3 {
+	margin-top:10px !important;
 }
 
 #hindiLanguage {
@@ -139,19 +128,6 @@ span.hidden-xs {
     color: #2a6496 !important;
 }
 
-.zodiacSign {
-	height: 30px;
-	width: 30px;
-	position: absolute;
-	top: 43px;
-    left: 428px;;
-}
-
-.zodiacSign img{
-    height:30px;
-    width: 30px;
-}
-
 #page-profile .borderless td {
 	border:none;
 }
@@ -169,21 +145,21 @@ span.hidden-xs {
 }
 
 #jqueryLogo {
-	height: 20px;
-	width:20px;
+	height: 14px;
+	width:14px;
 	-webkit-filter: invert(100%);
-	position:absolute;
+	/* position:absolute;
 	top: 339px;
-    left: 21px;
+    left: 21px; */
 }
 
 #jqueryuiLogo {
-	height: 20px;
-    width:20px;
+	height: 14px;
+    width:14px;
 	-webkit-filter: invert(100%);
-    position:absolute;
+    /* position:absolute;
     top:341px;
-    left:39px;
+    left:39px; */
 }
 
 .interest-logo {
