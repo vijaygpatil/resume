@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'glyphiconshalflings';
+	src: url('../fonts/glyphicons-halflings-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: 'fawebfont';
+    src: url('../fonts/fontawesome-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/fontawesome-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 /* ==========================================================================
    Navigation
    ========================================================================== */
@@ -28,17 +40,9 @@ span.hidden-xs {
 	background: #f7f7f7;
 }
 
-#page-contact header h2 {
-	text-align: center;
-}
-
 #page-portfolio {
 	padding: 50px 0;
 	background: #fff;
-}
-
-#page-portfolio header h2 {
-	text-align: center;
 }
 
 #page-experience {
@@ -46,17 +50,9 @@ span.hidden-xs {
 	background: #f7f7f7;
 }
 
-#page-experience header h2 {
-	text-align: center;
-}
-
 #page-education {
 	padding: 50px 0;
 	background: #fff;
-}
-
-#page-education header h2 {
-	text-align: center;
 }
 
 #page-skills {
@@ -64,17 +60,9 @@ span.hidden-xs {
 	background: #f7f7f7;
 }
 
-#page-skills header h2 {
-	text-align: center;
-}
-
 #page-profile {
 	padding: 50px 0;
 	background: #fff;
-}
-
-#page-profile header h2 {
-	text-align: center;
 }
 
 #page-welcome {
@@ -84,32 +72,22 @@ span.hidden-xs {
 }
 
 #page-welcome header {
-	color: #fff;
 	padding-top: 23%;
 }
 
 #page-welcome header h1 {
 	margin: 0;
 	padding: 0;
-	font-size: 4.5em;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	line-height: 1em;
-	text-transform: uppercase;
 }
 
-#page-welcome header p {
-	font-size: 2em;
-	display: inline-block;
-	margin-bottom: 5px;
-	padding: 0 8px;
+#page-welcome header h2 {
+	margin-bottom: 20px;
 	letter-spacing: 0.1em;
-	line-height: 3em;
-	text-transform: uppercase;
+	color: #ffffff;
 }
 
 #page-profile .profile-img{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width:242px;
     height:242px;
     position:absolute;
@@ -118,7 +96,6 @@ span.hidden-xs {
 }
 
 #page-profile .profile-content{
-    margin: 20px 0 20px 0;
     position:relative;
     top:0;
     left:0;
@@ -128,6 +105,7 @@ span.hidden-xs {
     position:relative;
     top:0;
     left:0;
+    background-image: url('../img/fabric.png');
 }
 
 #page-profile .justify-text {
@@ -162,16 +140,16 @@ span.hidden-xs {
 }
 
 .zodiacSign {
-	height: 25px;
-    width: 25px;
-    position: absolute;
-    top: 33px;
-    left: 468px;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 43px;
+    left: 428px;;
 }
 
 .zodiacSign img{
-    height:25px;
-    width: 25px;
+    height:30px;
+    width: 30px;
 }
 
 #page-profile .borderless td {
@@ -180,6 +158,40 @@ span.hidden-xs {
 
 #page-profile .profile-topic {
     border-bottom: 1px solid #BCBCBC;
+    text-align: right;
+    width: 100px;
+}
+
+#page-profile .profile-topic h5 {
+	margin-top: 0 !important;
+    padding-top: 4px;
+    width: 100px;
+}
+
+#jqueryLogo {
+	height: 20px;
+	width:20px;
+	-webkit-filter: invert(100%);
+	position:absolute;
+	top: 339px;
+    left: 21px;
+}
+
+#jqueryuiLogo {
+	height: 20px;
+    width:20px;
+	-webkit-filter: invert(100%);
+    position:absolute;
+    top:341px;
+    left:39px;
+}
+
+.interest-logo {
+	text-align: right;
+}
+
+#myAge {
+	opacity:0.80;
 }
 /* ==========================================================================
    Base styles
@@ -187,23 +199,28 @@ span.hidden-xs {
 html,body {
 	height: 100%;
 	width: 100%;
-	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 700;
+	font-family: 'Lobster',cursive;
+    font-size: 4.5em;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 h2,h3,h4,h5,h6 {
-	font-family: ‘Lucida Console’, Monaco, monospace;
-	font-weight: 700;
+	font-family: 'Lobster',cursive;
+	color: #555555;
 }
 
-article {
-	/* background: url('../img/divider.png') no-repeat center -60px;
-	background-size: 100%;
-	padding: 20px 0; */
+h2 {
+	font-size:3em;
+	font-weight:400;
+}
+
+h4 {
+	opacity: 0.80;
 }
 
 /* ==========================================================================
@@ -308,10 +325,5 @@ article {
    Dividers
    ========================================================================== */
 .section-title {
-	font-size: 2em;
-	font-weight: 700;
-	letter-spacing: 5px;
-	color: #555555;
-	text-transform: uppercase;
 	padding: 20px 0;
 }

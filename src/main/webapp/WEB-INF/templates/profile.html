@@ -12,16 +12,16 @@
 				<div class="row profile-content">
 					<div class="well well-lg col-sm-12 ">
 						<div class="pull-right">
-							<button type="button" class="btn btn-primary"><i class="fa fa-download"> Print Resume</i></button>
+						    <a class="btn btn-primary" th:href="@{/download/Vijay_Patil_Web_Application_Develop.pdf}" download="Vijay_Patil_Web_Application_Develop"><i class="fa fa-print"/> Print Resume</a>
 						</div>
 						<div class="col-sm-offset-3">
-							<h4>Vijay Patil <span id="myAge"></span></h4>
-							<h5><i class="fa fa-globe"> <a target="_blank" href="https://www.google.com/maps/dir/Olathe,+KS/Olathe,+KS">Olathe, KS, USA</a></i>
-							<i class="fa fa-home"> <a target="_blank" href="https://www.google.com/maps/place/Dombivli,+Maharashtra,+India">Dombivli, Maharashtra, India</a></i>
-							<i class="fa fa-language"> English, <span id="hindiLanguage">Hindi</span>, <span id="marathiLanguage">Marathi</span>, <span id="gujaratiLanguage">Gujarati</span></i></h5>
+							<h3>Vijay Patil <span id="myAge"></span></h3>
+							<h4><i class="fa fa-globe"></i><a target="_blank" href="https://www.google.com/maps/dir/Olathe,+KS/Olathe,+KS"> Olathe, KS, USA</a>
+							<i class="fa fa-home"></i><a target="_blank" href="https://www.google.com/maps/place/Dombivli,+Maharashtra,+India"> Dombivli, Maharashtra, India</a>
+							<i class="fa fa-wechat"></i> English, <span id="hindiLanguage">Hindi</span>, <span id="marathiLanguage">Marathi</span>, <span id="gujaratiLanguage">Gujarati</span></h4>
 						</div>
 					</div>
-					<div class="profile-img">
+					<div class="profile-img thumbnail">
 						<img th:src="@{/img/profile.jpeg}" alt="profile" />
 					</div>
 					<div class="zodiacSign">
@@ -31,16 +31,61 @@
                         <table class="table borderless">
                             <tbody>
                                 <tr>
-                                    <td class="pull-right"><div class="profile-topic">Bio</div></td>
-                                    <td><p class="justify-text">I am a July 29th born and that makes me Leo. And yes I am a true leo who likes to be lavish, loving, charming, magnanimous, creative, faithful and honest. Go straight and turn right is always what I strive for. I don’t like to settle for second best anytime. I only want the best which can cause lavish excessive spendings to me but I like to enjoy the life of luxury. </p></td>
+                                    <td>
+                                        <div class="profile-topic"><h4>Bio</h4></div>
+	                                    <div class="interest-logo">
+	                                        <i class="fa fa-user"/>
+	                                        <i class="fa fa-graduation-cap"/>
+	                                    </div>
+                                        <a target="_blank" href="https://www.facebook.com/patilvijayg" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
+                                    </td>
+                                    <td><p class="justify-text">I am a Web Application Developer at Garmin International. 
+                                        I received my Bachelors in Information Technology at Mumbai University, India and earned a spot as a Software Developer at Yodlee Infotech Pvt ltd, Bangalore, India. 
+                                        After two years of working as a Software Developer, 
+                                        I decided it was time for me to achieve higher education and moved to Chicago, Illinois, where 
+                                        I earned Masters in Computer Science with specialization in Software Engineering at the Illinois Institute of Technology, Chicago. 
+                                        I currently reside with my wife Swati and my son Arnav.
+                                        My motto of life is to go straight and turn right.
+                                        </p></td>
                                 </tr>
                                 <tr>
-                                    <td class="pull-right"><div class="profile-topic">Experience</div></td>
-                                    <td><p class="justify-text">I am very passionate about Java programming. I like to read about new technologies and how these technologies simplify human life.  I have a good collection of music which I like to carry with me always. If I am in a good mood, I can cook awesome. I can watch movies back to back if I have to kill time. I like to keep my own collection of movies. I like to go on long drives sometimes. I love to go to different places and have fun. I like swimming and bowling too. I can read books only if it gives me some real knowledge. I don’t like to read fiction.</p></td>
+                                    <td>
+                                        <div class="profile-topic"><h4>Experience</h4></div>
+                                        <div class="interest-logo">
+                                            <i class="fa fa-desktop"/>
+                                        </div>
+                                        <a target="_blank" href="https://www.linkedin.com/in/patilvijayg" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
+                                    </td>
+                                    <td><p class="justify-text">I have a 7+ years of experience in the IT industry with a strong background in Enterprise Application Development using Java. 
+                                        I have extensive experience in Analysis, Design, Development, Testing, Implementation and Maintenance of Software Project development.
+                                        I have worked with prestigious companies like Garmin International, Olathe, KS, National Insurance Producer Registry, Kansas City, MO and Yodlee Info tech Pvt ltd, Bangalore, India.
+                                        I have strong technical, analytical and programming skills accompanied with excellent communication and inter personal skills.
+                                        </p></td>
                                 </tr>
                                 <tr>
-                                    <td class="pull-right"><div class="profile-topic">Interests</div></td>
-                                    <td><p class="justify-text">I did my schooling in a school named Vidya Niketan, in a small town by name Dombivali in Maharashtra. I never used to get good grades in Vidya Niketan because all day play and no study is the only thing I did in school. Later I realized that everyone has to be serious in life. I managed to get good grades in Higher Secondary School and got into a entirely new world of college. I got into a good University College - K J Somaiya College of Engineering to pursue my Bachelors Degree. </p></td>
+                                    <td>
+	                                    <div class="profile-topic"><h4>Interests</h4></div>
+	                                    <div class="interest-logo">
+	                                        <i class="fa fa-coffee"/>
+	                                        <i class="fa fa-leaf"/>
+	                                        <img alt="jQuery" id="jqueryLogo" th:src="@{/img/jquery-32.png}"/>
+	                                        <img alt="jQuery" id="jqueryuiLogo" th:src="@{/img/jqueryui-32.png}"/>
+	                                        <i class="fa fa-css3"/>
+	                                        <i class="fa fa-html5"/><br/>
+	                                        <i class="fa fa-car"/>
+	                                        <i class="fa fa-camera"/>
+	                                        <i class="fa fa-film"/>
+	                                        <i class="fa fa-music"/>
+	                                        <i class="fa fa-cutlery"/><br/>
+	                                        <i class="fa fa-apple"/>
+	                                        <i class="fa fa-google"/>
+	                                    </div>
+                                    </td>
+                                    <td><p class="justify-text">I am very passionate about Java programming, jQuery platform, HTML and CSS. I keep my skills up-to-date by practicing them outside of my work.
+                                        I like to read about new technologies and how these technologies simplify human life. When I am not coding, I cook food and watch movies or listen to music. I keep my own collection of movies and music.
+                                        I like to go on long drives. 
+                                        I love to go to different places and have fun. I love photography. 
+                                        I like biking, swimming, bowling, Jet Skiing.</p></td>
                                 </tr>
                             </tbody>
                         </table>

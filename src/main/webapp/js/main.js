@@ -78,7 +78,7 @@ $(document).ready(function() {
 	});
 	
 	$('#page-welcome header h1').addClass('animated fadeInDownBig');
-	$('#page-welcome header p').addClass('animated fadeInRightBig');
+	$('#page-welcome header h2').addClass('animated fadeInRightBig');
 	$('.social-icons').addClass('animated fadeInLeftBig');
 	$('.contact-me').addClass('animated fadeInUpBig');
 	

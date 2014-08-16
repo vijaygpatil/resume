@@ -21,6 +21,7 @@
 	<mvc:resources location="/css/" mapping="/css/**" />
 	<mvc:resources location="/js/" mapping="/js/**" />
 	<mvc:resources location="/fonts/" mapping="/fonts/**" />
+	<mvc:resources location="/download/" mapping="/download/**" />
 
 	<!-- **************************************************************** -->
 	<!-- SPRING ANNOTATION PROCESSING                                     -->
@@ -38,6 +39,7 @@
 		class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
 		<property name="prefix" value="/WEB-INF/templates/" />
 		<property name="suffix" value=".html" />
+		<property name="cacheable" value="false" />
 		<property name="templateMode" value="HTML5" />
 	</bean>
 
