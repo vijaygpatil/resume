@@ -87,9 +87,10 @@ span.hidden-xs {
 }
 
 #page-profile .well{
-    position:relative;
-    top:0;
-    left:0;
+    background-image: url('../img/fabric.png');
+}
+
+#page-contact .well{
     background-image: url('../img/fabric.png');
 }
 
