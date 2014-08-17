@@ -79,13 +79,12 @@ $(document).ready(function() {
 	
 	$('#page-welcome header h1').addClass('animated fadeInDownBig');
 	$('#page-welcome header h2').addClass('animated fadeInRightBig');
-	$('.social-icons').addClass('animated fadeInLeftBig');
+	$('#page-welcome .social-icons').addClass('animated fadeInLeftBig');
 	$('.contact-me').addClass('animated fadeInUpBig');
-	
 	
 	var myBirthDay = new Date(1982, 6, 29);
 	var today = new Date();
-	var oneYearInMillSecs = 1000*60*60*24*365
+	var oneYearInMillSecs = 1000*60*60*24*365;
 	var myAge = Math.floor((today.getTime()-myBirthDay.getTime())/(oneYearInMillSecs));
 	$('#myAge').text(myAge);
 	
@@ -99,6 +98,24 @@ $(document).ready(function() {
 	
 	$('#hindiLanguage').on('click', function(){
 		window.open('http://en.wikipedia.org/wiki/Hindi_language');
+	});
+	
+
+	$('#page-contact').waypoint(function(direction) {
+		if (direction == 'down') {
+			$('#page-contact .social-icons').css( "display", "block" ).addClass('animated fadeInLeftBig');
+		}
+		},{	offset : function() {return $(window).height() - $(this).height();},
+			triggerOnce: true,
+	});
+	
+	$('#page-profile').waypoint(function(direction) {
+		if (direction == 'down') {
+			$('#page-profile-facebook').css( "display", "block" ).addClass('animated fadeInLeftBig');
+			$('#page-profile-linkedin').css( "display", "block" ).addClass('animated fadeInLeftBig');
+		}
+		},{	offset : function() {return $('.navbar-fixed-top').height();},
+			triggerOnce: true,
 	});
 });
 

@@ -1,13 +1,23 @@
 @font-face {
-    font-family: 'glyphiconshalflings';
-	src: url('../fonts/glyphicons-halflings-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-         url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+	font-family: "FontAwesome";
+	src: url("../fonts/fontawesome-webfont.eot");
+	src: url("../fonts/fontawesome-webfont.eot?#iefix") format("eot"),
+		url("../fonts/fontawesome-webfont.woff") format("woff"),
+		url("../fonts/fontawesome-webfont.ttf") format("truetype"),
+		url("../fonts/fontawesome-webfont.svg#FontAwesome") format("svg");
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face {
-    font-family: 'fawebfont';
-    src: url('../fonts/fontawesome-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-         url('../fonts/fontawesome-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+.icon:before {
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.about-tests:before {
+	content: '\f0c3';
 }
 
 /* ==========================================================================
@@ -164,6 +174,14 @@ span.hidden-xs {
 #myAge {
 	opacity:0.80;
 }
+
+#page-profile-facebook {
+	display:none;
+}
+
+#page-profile-linkedin {
+    display:none;
+}
 /* ==========================================================================
    Base styles
    ========================================================================== */
@@ -268,6 +286,7 @@ h4 {
 .page-contact .social-icons {
 	margin-bottom: auto;
 	padding-top: 0;
+	display:none;
 }
 
 .page-contact .social-icons .btn {

@@ -4,12 +4,85 @@
         <div th:fragment="skills">
             <div  class="container">
                 <header>
-                    <h2 class="section-title"><i class="fa fa-code"></i> Skills</h2>
+                    <h2 class="section-title"><i class="fa fa-code"/> <span th:text="' '+#{skills.header}"/></h2>
                 </header>
                 
-                <article class="col-lg-12">
+                <article class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table class="table table-bordered table-hover">
+	                            <tbody>
+                                    <tr>
+                                        <td class="col-sm-2"><i class="fa fa-laptop fa-fw"/><span th:text="' '+#{skills.languages}"/></td>
+                                        <td class="col-sm-10"><span th:text="#{skills.languages.list}"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-2"><i class="fa fa-cogs fa-fw"/><span th:text="' '+#{skills.frameworks}"/></td>
+                                        <td class="col-sm-10"><span th:text="#{skills.frameworks.list}"/></td>
+                                    </tr>
+	                                <tr>
+	                                    <td class="col-sm-2"><i class="fa fa-globe fa-fw"/><span th:text="' '+#{skills.webtechnology}"/></td>
+	                                    <td class="col-sm-10"><span th:text="#{skills.webtechnology.list}"/></td>
+	                                </tr>
+	                                <tr>
+                                        <td class="col-sm-2"><i class="fa fa-flask fa-fw"/><span th:text="' '+#{skills.testing}"/></td>
+                                        <td class="col-sm-10"><span th:text="#{skills.testing.list}"/></td>
+                                    </tr>
+	                                <tr>
+                                        <td class="col-sm-2"><i class="fa fa-database fa-fw"/><span th:text="' '+#{skills.database}"/></td>
+                                        <td class="col-sm-10"><span th:text="#{skills.database.list}"/></td>
+                                    </tr>
+	                                <tr>
+                                        <td class="col-sm-2"><i class="fa fa-wrench fa-fw"></i><span th:text="' '+#{skills.tools}"/></td>
+                                        <td class="col-sm-10"><span th:text="#{skills.tools.list}"/></td>
+                                    </tr>
+	                            </tbody>
+	                        </table>
+                        </div>
+                    </div>
                 </article>
             </div>
         </div>
     </body>
 </html>
+
+
+
+<!-- <div class="row">
+    <div class="col-md-2">
+     <span class="chart" data-percent="95">
+            <span class="percent">95</span>
+            <h3>Photoshop</h3>
+     <canvas height="150" width="150"></canvas></span>
+  </div>
+     <div class="col-md-2 ">
+     <span class="chart" data-percent="60">
+            <span class="percent">60</span>
+            <h3>Illustrator</h3>
+     <canvas height="150" width="150"></canvas></span>
+  </div>
+     <div class="col-md-2">
+     <span class="chart" data-percent="75">
+            <span class="percent">75</span>
+             <h3>HTML</h3>
+     <canvas height="150" width="150"></canvas></span>
+  </div>
+     <div class="col-md-2">
+     <span class="chart" data-percent="80">
+            <span class="percent">80</span>
+            <h3>CSS</h3>
+     <canvas height="150" width="150"></canvas></span>
+  </div>
+     <div class="col-md-2">
+     <span class="chart" data-percent="65">
+            <span class="percent">65</span>
+            <h3>jQuery</h3>
+     <canvas height="150" width="150"></canvas></span>
+  </div>
+     <div class="col-md-2">
+     <span class="chart" data-percent="85">
+            <span class="percent">85</span>
+             <h3>PHP</h3>
+     <canvas height="150" width="150"></canvas></span>
+  </div>
+</div> -->
