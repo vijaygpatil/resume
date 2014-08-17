@@ -1,90 +1,82 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org">
-<body>
-	<div th:fragment="profile">
-		<div class="container">
-			<header>
-				<h2 class="section-title"><i class="fa fa-user"></i> Personal Profile</h2>
-			</header>
-
-			<article class="col-sm-12">
-				<div class="row">
-					<div class="well col-sm-12 ">
-						<div class="pull-right">
-						    <a class="btn btn-primary" th:href="@{/download/Vijay_Patil_Web_Application_Develop.pdf}" download="Vijay_Patil_Web_Application_Develop"><i class="fa fa-print"/> Print Resume</a>
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+	<body>
+	    <div th:fragment="profile">
+	        <div class="container">
+	            <header>
+	                <h2 class="section-title"><i class="fa fa-user"/><span th:text="' '+#{profile.header}"/></h2>
+	            </header>
+	
+	            <article class="col-sm-12">
+	                <div class="row">
+	                    <div class="well col-sm-12">
+	                        <div class="pull-right">
+	                            <a class="btn btn-primary" th:href="@{/download/Vijay_Patil_Web_Application_Develop.pdf}" download="Vijay_Patil_Web_Application_Develop"><i class="fa fa-print"/> <span th:text="#{profile.print.resume}"/></a>
+	                        </div>
+							<h3><span th:text="#{profile.user}+' '"/><span id="myAge"/></h3>
+							<h4><i class="fa fa-globe"/>
+								<a target="_blank" href="https://www.google.com/maps/dir/Olathe,+KS/Olathe,+KS" th:text="' '+#{profile.user.current.location}"/>
+								<i class="fa fa-home"/>
+								<a target="_blank" href="https://www.google.com/maps/place/Dombivli,+Maharashtra,+India" th:text="' '+#{profile.user.home.location}"/>
+								<i class="fa fa-wechat"/>
+								<span th:text="' '+#{profile.user.language1}"/>
+								<span id="hindiLanguage" th:text="' '+#{profile.user.language2}"/>
+								<span id="marathiLanguage" th:text="' '+#{profile.user.language3}"/>
+								<span id="gujaratiLanguage" th:text="' '+#{profile.user.language4}"/>
+							</h4>
 						</div>
-						<h3>Vijay Patil <span id="myAge"></span></h3>
-						<h4><i class="fa fa-globe"></i><a target="_blank" href="https://www.google.com/maps/dir/Olathe,+KS/Olathe,+KS"> Olathe, KS, USA</a>
-						<i class="fa fa-home"></i><a target="_blank" href="https://www.google.com/maps/place/Dombivli,+Maharashtra,+India"> Dombivli, Maharashtra, India</a>
-						<i class="fa fa-wechat"></i> English, <span id="hindiLanguage">Hindi</span>, <span id="marathiLanguage">Marathi</span>, <span id="gujaratiLanguage">Gujarati</span></h4>
+						<div class="col-sm-12">
+	                        <table class="table borderless">
+	                            <tbody>
+	                                <tr>
+	                                    <td>
+	                                        <div class="profile-topic"><h4 th:text="#{profile.user.topic.bio}"/></div>
+		                                    <div class="interest-logo">
+		                                        <i class="fa fa-user"/>
+		                                        <i class="fa fa-graduation-cap"/>
+		                                    </div>
+	                                        <a target="_blank" href="https://www.facebook.com/patilvijayg" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"/></a>
+	                                    </td>
+	                                    <td><p class="justify-text" th:text="#{profile.user.topic.bio.description}"/></td>
+	                                </tr>
+	                                <tr>
+	                                    <td>
+	                                        <div class="profile-topic"><h4 th:text="#{profile.user.topic.experience}"/></div>
+	                                        <div class="interest-logo">
+	                                            <i class="fa fa-desktop"/>
+	                                        </div>
+	                                        <a target="_blank" href="https://www.linkedin.com/in/patilvijayg" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"/></a>
+	                                    </td>
+	                                    <td><p class="justify-text" th:text="#{profile.user.topic.experience.description}"/></td>
+	                                </tr>
+	                                <tr>
+	                                    <td>
+		                                    <div class="profile-topic"><h4 th:text="#{profile.user.topic.interest}"></h4></div>
+		                                    <div class="interest-logo">
+		                                        <i class="fa fa-coffee"/>
+		                                        <i class="fa fa-leaf"/>
+		                                        <img alt="jQuery" id="jqueryLogo" th:src="@{/img/jquery-14.png}"/>
+		                                        <img alt="jQuery" id="jqueryuiLogo" th:src="@{/img/jqueryui-14.png}"/>
+		                                        <i class="fa fa-css3"/>
+		                                        <i class="fa fa-html5"/><br/>
+		                                        <i class="fa fa-car"/>
+		                                        <i class="fa fa-camera"/>
+		                                        <i class="fa fa-film"/>
+		                                        <i class="fa fa-music"/>
+		                                        <i class="fa fa-cutlery"/><br/>
+		                                        <i class="fa fa-apple"/>
+		                                        <i class="fa fa-google"/>
+		                                    </div>
+	                                    </td>
+	                                    <td><p class="justify-text" th:text="#{profile.user.topic.interest.description}"/></td>
+	                                </tr>
+	                            </tbody>
+	                        </table>
+						</div>
 					</div>
-					<div class="col-sm-12">
-                        <table class="table borderless">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="profile-topic"><h4>Bio</h4></div>
-	                                    <div class="interest-logo">
-	                                        <i class="fa fa-user"/>
-	                                        <i class="fa fa-graduation-cap"/>
-	                                    </div>
-                                        <a target="_blank" href="https://www.facebook.com/patilvijayg" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
-                                    </td>
-                                    <td><p class="justify-text">I am a Web Application Developer at Garmin International. 
-                                        I received my Bachelors in Information Technology at Mumbai University, India and earned a spot as a Software Developer at Yodlee Infotech Pvt ltd, Bangalore, India. 
-                                        After two years of working as a Software Developer, 
-                                        I decided it was time for me to achieve higher education and moved to Chicago, Illinois, where 
-                                        I earned Masters in Computer Science with specialization in Software Engineering at the Illinois Institute of Technology, Chicago. 
-                                        I currently reside with my wife Swati and my son Arnav.
-                                        My motto of life is to go straight and turn right.
-                                        </p></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="profile-topic"><h4>Experience</h4></div>
-                                        <div class="interest-logo">
-                                            <i class="fa fa-desktop"/>
-                                        </div>
-                                        <a target="_blank" href="https://www.linkedin.com/in/patilvijayg" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
-                                    </td>
-                                    <td><p class="justify-text">I have a 7+ years of experience in the IT industry with a strong background in Enterprise Application Development using Java. 
-                                        I have extensive experience in Analysis, Design, Development, Testing, Implementation and Maintenance of Software Project development.
-                                        I have worked with prestigious companies like Garmin International, Olathe, KS, National Insurance Producer Registry, Kansas City, MO and Yodlee Info tech Pvt ltd, Bangalore, India.
-                                        I have strong technical, analytical and programming skills accompanied with excellent communication and inter personal skills.
-                                        </p></td>
-                                </tr>
-                                <tr>
-                                    <td>
-	                                    <div class="profile-topic"><h4>Interests</h4></div>
-	                                    <div class="interest-logo">
-	                                        <i class="fa fa-coffee"/>
-	                                        <i class="fa fa-leaf"/>
-	                                        <img alt="jQuery" id="jqueryLogo" th:src="@{/img/jquery-14.png}"/>
-	                                        <img alt="jQuery" id="jqueryuiLogo" th:src="@{/img/jqueryui-14.png}"/>
-	                                        <i class="fa fa-css3"/>
-	                                        <i class="fa fa-html5"/><br/>
-	                                        <i class="fa fa-car"/>
-	                                        <i class="fa fa-camera"/>
-	                                        <i class="fa fa-film"/>
-	                                        <i class="fa fa-music"/>
-	                                        <i class="fa fa-cutlery"/><br/>
-	                                        <i class="fa fa-apple"/>
-	                                        <i class="fa fa-google"/>
-	                                    </div>
-                                    </td>
-                                    <td><p class="justify-text">I am very passionate about Java programming, jQuery platform, HTML and CSS. I keep my skills up-to-date by practicing them outside of my work.
-                                        I like to read about new technologies and how these technologies simplify human life. When I am not coding, I cook food and watch movies or listen to music. I keep my own collection of movies and music.
-                                        I like to go on long drives. 
-                                        I love to go to different places and have fun. I love photography. 
-                                        I like biking, swimming, bowling, Jet Skiing.</p></td>
-                                </tr>
-                            </tbody>
-                        </table>
-					</div>
-				</div>
-            </article>
-        </div>
-	</div>
-</body>
+	            </article>
+	        </div>
+		</div>
+	</body>
 </html>
