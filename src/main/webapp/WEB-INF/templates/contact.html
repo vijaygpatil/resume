@@ -8,7 +8,8 @@
 	            </header>
 	            
 	            <article class="col-sm-12">
-	                <div class="row well">
+	                <div class="row panel panel-default">
+	                   <div class="panel-body">
 	                   <div id="messageSuccess" class="col-sm-12" th:if="${#httpServletRequest.getParameter('status') == 'success'}">
                             <div class="alert alert-success">
                                 <i class="fa fa-check-circle"/><span th:text="' '+#{contact.success.message}"/>
@@ -68,6 +69,7 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
                         </div>
 	                </div>
 	            </article>

@@ -96,11 +96,11 @@ span.hidden-xs {
 	color: #ffffff;
 }
 
-#page-profile .well{
+#page-profile .panel{
     background-image: url('../img/fabric.png');
 }
 
-#page-contact .well{
+#page-contact .panel{
     background-image: url('../img/fabric.png');
 }
 
