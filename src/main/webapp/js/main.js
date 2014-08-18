@@ -117,5 +117,29 @@ $(document).ready(function() {
 		},{	offset : function() {return $('.navbar-fixed-top').height();},
 			triggerOnce: true,
 	});
+	
+	$('#myProgressbar1').waypoint(function() {
+		$(this).progressbar(40);
+	},{
+		offset : 'bottom-in-view'
+	});
+	
+	$('#myProgressbar2').waypoint(function() {
+		$(this).progressbar(20);
+	},{
+		offset : 'bottom-in-view'
+	});
+	
+	$('#myProgressbar3').waypoint(function() {
+		$(this).progressbar(80);
+	},{
+		offset : 'bottom-in-view'
+	});
+	
+	$('#myProgressbar4').waypoint(function() {
+		$(this).progressbar(60);
+	},{
+		offset : 'bottom-in-view'
+	});
 });
 
