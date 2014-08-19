@@ -114,32 +114,77 @@ $(document).ready(function() {
 			$('#page-profile-facebook').css( "display", "block" ).addClass('animated fadeInLeftBig');
 			$('#page-profile-linkedin').css( "display", "block" ).addClass('animated fadeInLeftBig');
 		}
-		},{	offset : function() {return $('.navbar-fixed-top').height();},
-			triggerOnce: true,
-	});
-	
-	$('#myProgressbar1').waypoint(function() {
-		$(this).progressbar(40);
-	},{
-		offset : 'bottom-in-view'
-	});
-	
-	$('#myProgressbar2').waypoint(function() {
-		$(this).progressbar(20);
-	},{
-		offset : 'bottom-in-view'
-	});
-	
-	$('#myProgressbar3').waypoint(function() {
-		$(this).progressbar(80);
-	},{
-		offset : 'bottom-in-view'
+		},{	offset : '25%',
+			triggerOnce: true
 	});
 	
 	$('#myProgressbar4').waypoint(function() {
-		$(this).progressbar(60);
+		$('#myProgressbar1').progressbar(40);
+		$('#myProgressbar2').progressbar(20);
+		$('#myProgressbar3').progressbar(80);
+		$('#myProgressbar4').progressbar(60);
 	},{
 		offset : 'bottom-in-view'
+	});
+	
+	$('#page-welcome').waypoint(function(direction) {
+		if(direction == 'down') {
+			$('.welcome-nav').css('color','white');
+			$('.profile-nav, .skills-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
+	},{
+		offset : 51
+	});
+	
+	$('#page-welcome').waypoint(function(direction) {
+		if(direction == 'up') {
+			$('.welcome-nav').css('color','white');
+			$('.profile-nav, .skills-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
+	},{
+		offset : -51
+	});
+	
+	$('#page-profile').waypoint(function() {
+			$('.profile-nav').css('color','white');
+			$('.welcome-nav, .skills-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+	},{
+		offset : 51
+	});
+	
+	$('#page-skills').waypoint(function() {
+			$('.skills-nav').css('color','white');
+			$('.profile-nav, .welcome-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+	},{
+		offset : 51
+	});
+	
+	$('#page-education').waypoint(function() {
+			$('.education-nav').css('color','white');
+			$('.skills-nav, .profile-nav, .welcome-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+	},{
+		offset : 51
+	});
+	
+	$('#page-experience').waypoint(function() {
+			$('.experience-nav').css('color','white');
+			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .portfolio-nav, .contact-nav').css('color','');
+	},{
+		offset : 51
+	});
+	
+	$('#page-portfolio').waypoint(function() {
+			$('.portfolio-nav').css('color','white');
+			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .experience-nav, .contact-nav').css('color','');
+	},{
+		offset : 51
+	});
+	
+	$('#page-contact').waypoint(function() {
+			$('.contact-nav').css('color','white');
+			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .experience-nav, .portfolio-nav').css('color','');
+	},{
+		offset : function() {return $(window).height() - $(this).height();}
 	});
 });
 
