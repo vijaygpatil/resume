@@ -145,39 +145,84 @@ $(document).ready(function() {
 		offset : -51
 	});
 	
-	$('#page-profile').waypoint(function() {
+	$('#page-profile .container').waypoint(function(direction) {
+		if(direction == 'down') {
 			$('.profile-nav').css('color','white');
 			$('.welcome-nav, .skills-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
 	},{
-		offset : 51
+		offset : 71
 	});
 	
-	$('#page-skills').waypoint(function() {
+	$('#page-skills .container').waypoint(function(direction) {
+		if(direction == 'down') {
 			$('.skills-nav').css('color','white');
 			$('.profile-nav, .welcome-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
 	},{
-		offset : 51
+		offset : 71
 	});
 	
-	$('#page-education').waypoint(function() {
+	$('#page-education .container').waypoint(function(direction) {
+		if(direction == 'down') {
 			$('.education-nav').css('color','white');
 			$('.skills-nav, .profile-nav, .welcome-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
 	},{
-		offset : 51
+		offset : 71
 	});
 	
-	$('#page-experience').waypoint(function() {
+	$('#page-experience .container').waypoint(function(direction) {
+		if(direction == 'down') {	
 			$('.experience-nav').css('color','white');
 			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
 	},{
-		offset : 51
+		offset : 71
 	});
 	
-	$('#page-portfolio').waypoint(function() {
+	$('#page-portfolio .container').waypoint(function(direction) {
+		if(direction == 'down') {
 			$('.portfolio-nav').css('color','white');
 			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .experience-nav, .contact-nav').css('color','');
+		}
 	},{
-		offset : 51
+		offset : 71
+	});
+	
+	$('#page-profile .container').waypoint(function(direction) {
+		if(direction == 'up') {
+			$('.profile-nav').css('color','white');
+			$('.welcome-nav, .skills-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
+	});
+	
+	$('#page-skills .container').waypoint(function(direction) {
+		if(direction == 'up') {
+			$('.skills-nav').css('color','white');
+			$('.profile-nav, .welcome-nav, .education-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
+	});
+	
+	$('#page-education .container').waypoint(function(direction) {
+		if(direction == 'up') {
+			$('.education-nav').css('color','white');
+			$('.skills-nav, .profile-nav, .welcome-nav, .experience-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
+	});
+	
+	$('#page-experience .container').waypoint(function(direction) {
+		if(direction == 'up') {	
+			$('.experience-nav').css('color','white');
+			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .portfolio-nav, .contact-nav').css('color','');
+		}
+	});
+	
+	$('#page-portfolio .container').waypoint(function(direction) {
+		if(direction == 'up') {
+			$('.portfolio-nav').css('color','white');
+			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .experience-nav, .contact-nav').css('color','');
+		}
 	});
 	
 	$('#page-contact').waypoint(function() {

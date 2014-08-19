@@ -30,7 +30,7 @@
 }
 
 .navbar-nav {
-	display: inline-block;
+	display: -webkit-inline-box;
     float: none;
 }
 
@@ -40,6 +40,30 @@
 
 span.hidden-xs {
 	display: inline !important;
+}
+
+@media ( min-width : 400px) and (max-width: 767px) {
+    span.hidden-xs {
+        display: none !important
+    }
+    
+    h1 {
+        font-size:50px !important;
+        font-weight:700;
+    }
+	
+	h2 {
+	    font-size:30px !important;
+	    font-weight:400;
+	}
+	
+	h3 {
+	   font-size: 20px !important;
+	}
+	
+	h4 {
+	   font-size: 15px !important;
+	}
 }
 
 /* ==========================================================================
