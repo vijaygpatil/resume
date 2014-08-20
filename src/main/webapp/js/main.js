@@ -118,11 +118,13 @@ $(document).ready(function() {
 			triggerOnce: true
 	});
 	
-	$('#myProgressbar4').waypoint(function() {
+	$('#myProgressbar6').waypoint(function() {
 		$('#myProgressbar1').progressbar(40);
 		$('#myProgressbar2').progressbar(20);
 		$('#myProgressbar3').progressbar(80);
 		$('#myProgressbar4').progressbar(60);
+		$('#myProgressbar5').progressbar(50);
+		$('#myProgressbar6').progressbar(90);
 	},{
 		offset : 'bottom-in-view'
 	});

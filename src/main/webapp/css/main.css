@@ -29,9 +29,18 @@
 	text-align: center;
 }
 
-.navbar-nav {
-	display: -webkit-inline-box;
-    float: none;
+@-moz-document url-prefix()  {
+    .navbar-nav {
+	    display: -moz-inline-box;
+	    float: none;
+	}
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .navbar-nav {
+        display: -webkit-inline-box;
+        float: none;
+    }
 }
 
 .navbar-nav>li>a {
@@ -42,10 +51,14 @@ span.hidden-xs {
 	display: inline !important;
 }
 
-@media ( min-width : 400px) and (max-width: 767px) {
+@media ( min-width : 300px) and (max-width: 767px) {
     span.hidden-xs {
         display: none !important
     }
+    
+    .navbar-nav {
+	    display: -webkit-inline-box;
+	}
     
     h1 {
         font-size:50px !important;
@@ -120,7 +133,7 @@ span.hidden-xs {
 	color: #ffffff;
 }
 
-#page-profile .panel{
+#page-profile .well{
     background-image: url('../img/fabric.png');
 }
 
@@ -128,7 +141,11 @@ span.hidden-xs {
     background-image: url('../img/fabric.png');
 }
 
-#page-profile .justify-text {
+#page-education .well{
+    background-image: url('../img/fabric.png');
+}
+
+.justify-text {
 	text-align: justify;
 }
 
@@ -234,6 +251,10 @@ h2 {
 
 h4 {
 	opacity: 0.80;
+}
+
+h5 {
+	opacity: 0.60;
 }
 
 /* ==========================================================================

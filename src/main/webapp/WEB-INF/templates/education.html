@@ -4,12 +4,73 @@
         <div th:fragment="education">
            <div  class="container">
                 <header>
-                    <h2 class="section-title"><i class="fa fa-graduation-cap"></i> Education</h2>
+                    <h2 class="section-title"><i class="fa fa-graduation-cap"/><span th:text="' '+#{education.header}"/></h2>
                 </header>
                 
                 <article class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-body" style="height:400px;"></div>
+                    <div class="row">
+                        <div class="well col-sm-12">
+                            <div class="pull-right">
+                                <a class="btn btn-primary" th:href="@{/download/Vijay_Patil_Web_Application_Develop.pdf}" download="Vijay_Patil_Web_Application_Develop"><i class="fa fa-print"/> <span th:text="#{education.print.transcript}"/></a>
+                            </div>
+                            <h3><span th:text="#{education.masters.degree}+' '"/></h3>
+                            <h4><i class="fa fa-university"/>
+                                <a target="_blank" href="http://web.iit.edu/" th:text="' '+#{education.university.masters}"/>
+                                <i class="fa fa-star"/>
+                                <span th:text="' '+#{education.masters.gpa}"/>
+                                <i class="fa fa-calendar"/>
+                                <span th:text="' '+#{education.masters.academic.year}"/>
+                            </h4>
+                        </div>
+                        
+                        <div class="col-sm-12 justify-text">
+                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
+                            <div class="col-sm-4">
+                                <ul>
+                                    <li>Software Metrics</li>
+                                    <li>Computer Networks - I</li>
+                                    <li>Broadband Networks</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                   <li>Science of Programming</li>
+                                   <li>Operating Systems</li>
+                                   <li>Software Modeling and Development</li>
+                               </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <ul>
+                                   <li>Advance Java Programming</li>
+                                   <li>Software Test and Quality</li>
+                                   <li>Software Quality Management</li>
+                               </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="well col-sm-12">
+                            <div class="pull-right">
+                                <a class="btn btn-primary" th:href="@{/download/Vijay_Patil_Web_Application_Develop.pdf}" download="Vijay_Patil_Web_Application_Develop"><i class="fa fa-print"/> <span th:text="#{education.print.transcript}"/></a>
+                            </div>
+                            <h3><span th:text="#{education.bachelors.degree}+' '"/></h3>
+                            <h4><i class="fa fa-university"/>
+                                <a target="_blank" href="http://www.somaiya.edu/VidyaVihar/kjsce" th:text="' '+#{education.university.bachelors}"/>
+                                <i class="fa fa-calendar"/>
+                                <span th:text="' '+#{education.bachelors.academic.year}"/>
+                            </h4>
+                        </div>
+                        
+                        <div class="col-sm-12 justify-text">
+                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.becourses.header}"/></h4>
+                            <h5><span th:text="#{education.be.firstYear.header}"/></h5>
+                            <p th:text="#{education.becourses.firstYear}"/>
+                            <h5><span th:text="#{education.be.secondYear.header}"/></h5>
+                            <p th:text="#{education.becourses.secondYear}"/>
+                            <h5><span th:text="#{education.be.thirdYear.header}"/></h5>
+                            <p th:text="#{education.becourses.thirdYear}"/>
+                            <h5><span th:text="#{education.be.fourthYear.header}"/></h5>
+                            <p th:text="#{education.becourses.fourthYear}"/>
+                        </div>
                     </div>
                 </article>
             </div>
