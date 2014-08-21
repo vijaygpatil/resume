@@ -34,6 +34,12 @@
 	    display: -moz-inline-box;
 	    float: none;
 	}
+	
+	#degreeCertificate {
+	  -moz-animation-duration: 3s;
+	  -moz-animation-delay: 1s;
+	  -moz-animation-iteration-count: infinite;
+	}
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -41,8 +47,17 @@
         display: -webkit-inline-box;
         float: none;
     }
+    
+    #degreeCertificate {
+	  -webkit-animation-duration: 3s;
+	  -webkit-animation-delay: 1s;
+	  -webkit-animation-iteration-count: infinite;
+	}
 }
 
+#degreeCertificate:hover {
+	cursor: pointer;
+}
 .navbar-nav>li>a {
 	padding-bottom: 0 !important;
 }
@@ -58,6 +73,10 @@ span.hidden-xs {
     
     .navbar-nav {
 	    display: -webkit-inline-box;
+	}
+	
+	.social-icons .btn {
+	    margin-right: 5px !important;
 	}
     
     h1 {
@@ -145,6 +164,22 @@ span.hidden-xs {
     background-image: url('../img/fabric.png');
 }
 
+#page-education .well h3 {
+	margin-top: 0px !important;
+}
+
+#page-education .well h4 {
+    margin-bottom: 5px !important;
+}
+
+#page-profile .well h3 {
+    margin-top: 0px !important;
+}
+
+#page-profile .well h4 {
+    margin-bottom: 5px !important;
+}
+
 .justify-text {
 	text-align: justify;
 }
@@ -222,6 +257,12 @@ span.hidden-xs {
 
 #page-profile-linkedin {
     display:none;
+}
+
+.modal-body img{
+	display:block;
+	margin:auto;
+	width:100%;
 }
 /* ==========================================================================
    Base styles
