@@ -89,6 +89,24 @@ $(document).ready(function() {
 		$('#beDegreeDetailsCollapse i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
 	});
 	
+	$('#garminDetails').on('hidden.bs.collapse', function () {
+		$('#garminDetailsCollapse i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
+	}).on('shown.bs.collapse', function () {
+		$('#garminDetailsCollapse i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
+	});
+	
+	$('#niprDetails').on('hidden.bs.collapse', function () {
+		$('#niprDetailsCollapse i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
+	}).on('shown.bs.collapse', function () {
+		$('#niprDetailsCollapse i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
+	});
+	
+	$('#yodleeDetails').on('hidden.bs.collapse', function () {
+		$('#yodleeDetailsCollapse i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
+	}).on('shown.bs.collapse', function () {
+		$('#yodleeDetailsCollapse i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
+	});
+	
 	$('#page-welcome header h1').addClass('animated fadeInDownBig');
 	$('#page-welcome header h2').addClass('animated fadeInRightBig');
 	$('#page-welcome .social-icons').addClass('animated fadeInLeftBig');

@@ -4,12 +4,163 @@
         <div th:fragment="experience">
             <div class="container">
                 <header>
-                    <h2 class="section-title"><i class="fa fa-desktop"></i> Experience</h2>
+                    <h2 class="section-title"><i class="fa fa-desktop"/><span th:text="' '+#{experience.header}"/></h2>
                 </header>
                 
-                <article class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-body" style="height:400px;"></div>
+                <article class="col-sm-12">
+                    <div class="row">
+                        <div class="well col-sm-12">
+                            <h3>
+                                <span th:text="' '+#{experience.company.one}"/>
+                                <a target="_blank" href="http://www.garmin.com/en-US"><i id="flashIcon" class="fa fa-external-link-square"/></a>
+                                <i class="fa fa-globe"/>
+                                <span th:text="' '+#{experience.company.one.location}"/>
+                            </h3>
+                            <h4>
+                                <i class="fa fa-building"/>
+                                <span th:text="' '+#{experience.company.one.dept}"/>
+                                <i class="fa fa-desktop"/>
+                                <span th:text="' '+#{experience.company.one.role}"/>
+                                <i class="fa fa-calendar"/>
+                                <span th:text="' '+#{experience.company.one.duration}"/>
+                                <a id="garminDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#garminDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
+                            </h4>
+                        </div>
+                        
+                        <div id="garminDetails" class="col-sm-12 collapse">
+                            <div class="col-sm-12 justify-text">
+                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
+                                <h5><span th:text="#{education.ms.project.one.title}"/></h5>
+                                <p th:text="#{education.ms.project.one.description}"/>
+                            </div>
+                            
+                            <div class="col-sm-12 justify-text">
+                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li><span th:text="#{education.software.metrics}"/></li>
+                                        <li><span th:text="#{education.computer.networks}"/></li>
+                                        <li><span th:text="#{education.science.of.programming}"/></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                       <li><span th:text="#{education.operating.systems}"/></li>
+                                       <li><span th:text="#{education.software.modelling}"/></li>
+                                       <li><span th:text="#{education.advance.java.programming}"/></li>
+                                   </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                       <li><span th:text="#{education.advance.java.programming}"/></li>
+                                       <li><span th:text="#{education.software.test.quality}"/></li>
+                                       <li><span th:text="#{education.software.quality.management}"/></li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="well col-sm-12">
+                            <h3>
+                                <span th:text="' '+#{experience.company.two}"/>
+                                <a target="_blank" href="http://www.nipr.com/"><i id="flashIcon" class="fa fa-external-link-square"/></a>
+                                <i class="fa fa-globe"/>
+                                <span th:text="' '+#{experience.company.two.location}"/>
+                            </h3>
+                            <h4>
+                                <i class="fa fa-building"/>
+                                <span th:text="' '+#{experience.company.two.dept}"/>
+                                <i class="fa fa-desktop"/>
+                                <span th:text="' '+#{experience.company.two.role}"/>
+                                <i class="fa fa-calendar"/>
+                                <span th:text="' '+#{experience.company.two.duration}"/>
+                                <a id="niprDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#niprDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
+                            </h4>
+                        </div>
+                        
+                        <div id="niprDetails" class="col-sm-12 collapse">
+                            <div class="col-sm-12 justify-text">
+                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
+                                <h5><span th:text="#{education.ms.project.one.title}"/></h5>
+                                <p th:text="#{education.ms.project.one.description}"/>
+                            </div>
+                            
+                            <div class="col-sm-12 justify-text">
+                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li><span th:text="#{education.software.metrics}"/></li>
+                                        <li><span th:text="#{education.computer.networks}"/></li>
+                                        <li><span th:text="#{education.science.of.programming}"/></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                       <li><span th:text="#{education.operating.systems}"/></li>
+                                       <li><span th:text="#{education.software.modelling}"/></li>
+                                       <li><span th:text="#{education.advance.java.programming}"/></li>
+                                   </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                       <li><span th:text="#{education.advance.java.programming}"/></li>
+                                       <li><span th:text="#{education.software.test.quality}"/></li>
+                                       <li><span th:text="#{education.software.quality.management}"/></li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="well col-sm-12">
+                            <h3>
+                                <span th:text="' '+#{experience.company.three}"/>
+                                <a target="_blank" href="http://www.yodlee.com/"><i id="flashIcon" class="fa fa-external-link-square"/></a>
+                                <i class="fa fa-globe"/>
+                                <span th:text="' '+#{experience.company.three.location}"/>
+                            </h3>
+                            <h4>
+                                <i class="fa fa-building"/>
+                                <span th:text="' '+#{experience.company.three.dept}"/>
+                                <i class="fa fa-desktop"/>
+                                <span th:text="' '+#{experience.company.three.role}"/>
+                                <i class="fa fa-calendar"/>
+                                <span th:text="' '+#{experience.company.three.duration}"/>
+                                <a id="yodleeDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#yodleeDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
+                            </h4>
+                        </div>
+                        
+                        <div id="yodleeDetails" class="col-sm-12 collapse">
+                            <div class="col-sm-12 justify-text">
+                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
+                                <h5><span th:text="#{education.ms.project.one.title}"/></h5>
+                                <p th:text="#{education.ms.project.one.description}"/>
+                            </div>
+                            
+                            <div class="col-sm-12 justify-text">
+                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li><span th:text="#{education.software.metrics}"/></li>
+                                        <li><span th:text="#{education.computer.networks}"/></li>
+                                        <li><span th:text="#{education.science.of.programming}"/></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                       <li><span th:text="#{education.operating.systems}"/></li>
+                                       <li><span th:text="#{education.software.modelling}"/></li>
+                                       <li><span th:text="#{education.advance.java.programming}"/></li>
+                                   </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul>
+                                       <li><span th:text="#{education.advance.java.programming}"/></li>
+                                       <li><span th:text="#{education.software.test.quality}"/></li>
+                                       <li><span th:text="#{education.software.quality.management}"/></li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
             </div>

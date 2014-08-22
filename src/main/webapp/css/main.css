@@ -164,12 +164,16 @@ span.hidden-xs {
     background-image: url('../img/fabric.png');
 }
 
+#page-experience .well{
+    background-image: url('../img/fabric.png');
+}
+
 #page-education .well h3 {
 	margin-top: 0px !important;
 }
 
 #page-education .well h4 {
-    margin-bottom: 5px !important;
+    margin-bottom: 0px !important;
 }
 
 #page-profile .well h3 {
@@ -177,9 +181,17 @@ span.hidden-xs {
 }
 
 #page-profile .well h4 {
-    margin-bottom: 5px !important;
+    margin-bottom: 0px !important;
 }
 
+#page-experience .well h3 {
+    margin-top: 0px !important;
+}
+
+#page-experience .well h4 {
+    margin-bottom: 0px !important;
+}
+ 
 .justify-text {
 	text-align: justify;
 }
@@ -265,7 +277,7 @@ span.hidden-xs {
 	width:100%;
 }
 
-#beDegreeDetailsCollapse, #msDegreeDetailsCollapse{
+#beDegreeDetailsCollapse, #msDegreeDetailsCollapse, #yodleeDetailsCollapse, #niprDetailsCollapse, #garminDetailsCollapse{
 	font-size: 24px;
 }
 
@@ -273,8 +285,12 @@ span.hidden-xs {
 	margin-right: 10px;
 }
 
-#beDegreeDetailsCollapse, #flashIcon {
+#flashIcon {
 	cursor: pointer;
+}
+
+#msDegreeDetails, #beDegreeDetails, #garminDetails, #niprDetails, #yodleeDetails {
+	margin-bottom: 20px;
 }
 /* ==========================================================================
    Base styles
