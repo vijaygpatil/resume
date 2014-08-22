@@ -35,7 +35,7 @@
 	    float: none;
 	}
 	
-	#degreeCertificate {
+	#flashIcon {
 	  -moz-animation-duration: 3s;
 	  -moz-animation-delay: 1s;
 	  -moz-animation-iteration-count: infinite;
@@ -48,7 +48,7 @@
         float: none;
     }
     
-    #degreeCertificate {
+    #flashIcon {
 	  -webkit-animation-duration: 3s;
 	  -webkit-animation-delay: 1s;
 	  -webkit-animation-iteration-count: infinite;
@@ -263,6 +263,18 @@ span.hidden-xs {
 	display:block;
 	margin:auto;
 	width:100%;
+}
+
+#beDegreeDetailsCollapse, #msDegreeDetailsCollapse{
+	font-size: 24px;
+}
+
+#msDegreeGraduationCap i, #beDegreeGraduationCap i {
+	margin-right: 10px;
+}
+
+#beDegreeDetailsCollapse, #flashIcon {
+	cursor: pointer;
 }
 /* ==========================================================================
    Base styles

@@ -77,6 +77,18 @@ $(document).ready(function() {
 		}, 1000);
 	});
 	
+	$('#msDegreeDetails').on('hidden.bs.collapse', function () {
+		$('#msDegreeDetailsCollapse i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
+	}).on('shown.bs.collapse', function () {
+		$('#msDegreeDetailsCollapse i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
+	});
+	
+	$('#beDegreeDetails').on('hidden.bs.collapse', function () {
+		$('#beDegreeDetailsCollapse i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
+	}).on('shown.bs.collapse', function () {
+		$('#beDegreeDetailsCollapse i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
+	});
+	
 	$('#page-welcome header h1').addClass('animated fadeInDownBig');
 	$('#page-welcome header h2').addClass('animated fadeInRightBig');
 	$('#page-welcome .social-icons').addClass('animated fadeInLeftBig');

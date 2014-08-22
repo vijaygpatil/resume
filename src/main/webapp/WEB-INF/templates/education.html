@@ -10,76 +10,89 @@
                 <article class="col-lg-12">
                     <div class="row">
                         <div class="well col-sm-12">
-                            <h3><a class="pull-right" data-toggle="modal" data-target="#myModalMSTranscript" th:title="#{education.transcript}"><i id="degreeCertificate" class="fa fa-file-text animated flash"/></a>
-                            <a data-toggle="modal" data-target="#myModalMSDegree" th:title="#{education.masters.degree.certificate.title}"><i id="degreeCertificate" class="fa fa-graduation-cap animated flash"/></a><span th:text="' '+#{education.masters.degree}"/></h3>
+                            <h3>
+                                <span th:text="' '+#{education.masters.degree}"/>
+                                <a class="pull-right" data-toggle="modal" data-target="#myModalMSTranscript" th:title="#{education.transcript}"><i id="flashIcon" class="fa fa-file-text animated flash"/></a>
+                                <a id="msDegreeGraduationCap" class="pull-right" data-toggle="modal" data-target="#myModalMSDegree" th:title="#{education.masters.degree.certificate.title}"><i id="flashIcon" class="fa fa-graduation-cap animated flash"/></a>
+                            </h3>
                             <h4><i class="fa fa-university"/>
                                 <a target="_blank" href="http://web.iit.edu/" th:text="' '+#{education.university.masters}"/>
                                 <i class="fa fa-calendar"/>
                                 <span th:text="' '+#{education.masters.academic.year}"/>
                                 <i class="fa fa-star"/>
                                 <span th:text="' '+#{education.masters.gpa}"/>
+                                <a id="msDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#msDegreeDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
                             </h4>
                         </div>
                         
-                        <div class="col-sm-12 justify-text">
-                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
-                            <h5><span th:text="#{education.ms.project.one.title}"/></h5>
-                            <p th:text="#{education.ms.project.one.description}"/>
+                        <div id="msDegreeDetails" class="col-sm-12 collapse">
+                            <div class="col-sm-12 justify-text">
+	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
+	                            <h5><span th:text="#{education.ms.project.one.title}"/></h5>
+	                            <p th:text="#{education.ms.project.one.description}"/>
+	                        </div>
+	                        
+	                        <div class="col-sm-12 justify-text">
+	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
+	                            <div class="col-sm-4">
+	                                <ul>
+	                                    <li><span th:text="#{education.software.metrics}"/></li>
+	                                    <li><span th:text="#{education.computer.networks}"/></li>
+	                                    <li><span th:text="#{education.science.of.programming}"/></li>
+	                                </ul>
+	                            </div>
+	                            <div class="col-sm-4">
+	                                <ul>
+	                                   <li><span th:text="#{education.operating.systems}"/></li>
+	                                   <li><span th:text="#{education.software.modelling}"/></li>
+	                                   <li><span th:text="#{education.advance.java.programming}"/></li>
+	                               </ul>
+	                            </div>
+	                            <div class="col-sm-4">
+	                                <ul>
+	                                   <li><span th:text="#{education.advance.java.programming}"/></li>
+	                                   <li><span th:text="#{education.software.test.quality}"/></li>
+	                                   <li><span th:text="#{education.software.quality.management}"/></li>
+	                               </ul>
+	                            </div>
+	                        </div>
                         </div>
                         
-                        <div class="col-sm-12 justify-text">
-                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
-                            <div class="col-sm-4">
-                                <ul>
-                                    <li><span th:text="#{education.software.metrics}"/></li>
-                                    <li><span th:text="#{education.computer.networks}"/></li>
-                                    <li><span th:text="#{education.science.of.programming}"/></li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-4">
-                                <ul>
-                                   <li><span th:text="#{education.operating.systems}"/></li>
-                                   <li><span th:text="#{education.software.modelling}"/></li>
-                                   <li><span th:text="#{education.advance.java.programming}"/></li>
-                               </ul>
-                            </div>
-                            <div class="col-sm-4">
-                                <ul>
-                                   <li><span th:text="#{education.advance.java.programming}"/></li>
-                                   <li><span th:text="#{education.software.test.quality}"/></li>
-                                   <li><span th:text="#{education.software.quality.management}"/></li>
-                               </ul>
-                            </div>
-                        </div>
                         
                         <div class="well col-sm-12">
-                            <h3><a class="pull-right" data-toggle="modal" data-target="#myModalBETranscript" th:title="#{education.transcript}"><i id="degreeCertificate" class="fa fa-file-text animated flash"/></a>
-                            <a data-toggle="modal" data-target="#myModalBEDegree" th:title="#{education.bachelors.degree.transcript.title}"><i id="degreeCertificate" class="fa fa-graduation-cap animated flash"/></a><span th:text="' '+#{education.bachelors.degree}"/></h3>
+                            <h3>
+                                <span th:text="' '+#{education.bachelors.degree}"/>
+                                <a class="pull-right" data-toggle="modal" data-target="#myModalBETranscript" th:title="#{education.transcript}"><i id="flashIcon" class="fa fa-file-text animated flash"/></a>
+                                <a id="beDegreeGraduationCap" class="pull-right" data-toggle="modal" data-target="#myModalBEDegree" th:title="#{education.bachelors.degree.transcript.title}"><i id="flashIcon" class="fa fa-graduation-cap animated flash"/></a>
+                            </h3>
                             <h4><i class="fa fa-university"/>
                                 <a target="_blank" href="http://www.somaiya.edu/VidyaVihar/kjsce" th:text="' '+#{education.university.bachelors}"/>
                                 <i class="fa fa-calendar"/>
                                 <span th:text="' '+#{education.bachelors.academic.year}"/>
                                 <i class="fa fa-star"/>
                                 <span th:text="' '+#{education.bachelors.class}"/>
+                                <a id="beDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#beDegreeDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
                             </h4>
                         </div>
                         
-                        <div class="col-sm-12 justify-text">
-                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.be.project.header}"/></h4>
-                            <h5><span th:text="#{education.be.project.title}"/></h5>
-                            <p th:text="#{education.be.project.description}"/>
-                        </div>
-                        
-                        <div class="col-sm-12 justify-text">
-                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.becourses.header}"/></h4>
-                            <h5><span th:text="#{education.be.firstYear.header}"/></h5>
-                            <p th:text="#{education.becourses.firstYear}"/>
-                            <h5><span th:text="#{education.be.secondYear.header}"/></h5>
-                            <p th:text="#{education.becourses.secondYear}"/>
-                            <h5><span th:text="#{education.be.thirdYear.header}"/></h5>
-                            <p th:text="#{education.becourses.thirdYear}"/>
-                            <h5><span th:text="#{education.be.fourthYear.header}"/></h5>
-                            <p th:text="#{education.becourses.fourthYear}"/>
+                        <div id="beDegreeDetails" class="col-sm-12 collapse">
+	                        <div class="col-sm-12 justify-text">
+	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.be.project.header}"/></h4>
+	                            <h5><span th:text="#{education.be.project.title}"/></h5>
+	                            <p th:text="#{education.be.project.description}"/>
+	                        </div>
+	                        
+	                        <div class="col-sm-12 justify-text">
+	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.becourses.header}"/></h4>
+	                            <h5><span th:text="#{education.be.firstYear.header}"/></h5>
+	                            <p th:text="#{education.becourses.firstYear}"/>
+	                            <h5><span th:text="#{education.be.secondYear.header}"/></h5>
+	                            <p th:text="#{education.becourses.secondYear}"/>
+	                            <h5><span th:text="#{education.be.thirdYear.header}"/></h5>
+	                            <p th:text="#{education.becourses.thirdYear}"/>
+	                            <h5><span th:text="#{education.be.fourthYear.header}"/></h5>
+	                            <p th:text="#{education.becourses.fourthYear}"/>
+	                        </div>
                         </div>
                         
                         <div class="modal fade" id="myModalMSDegree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
