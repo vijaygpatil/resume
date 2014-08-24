@@ -23,41 +23,35 @@
                                 <span th:text="' '+#{experience.company.one.role}"/>
                                 <i class="fa fa-calendar"/>
                                 <span th:text="' '+#{experience.company.one.duration}"/>
-                                <a id="garminDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#garminDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
+                                <a id="garminDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#garminDetails"><i id="flashIcon" class="fa fa-plus-square"/></a>
                             </h4>
                         </div>
                         
                         <div id="garminDetails" class="col-sm-12 collapse">
                             <div class="col-sm-12 justify-text">
-                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
-                                <h5><span th:text="#{education.ms.project.one.title}"/></h5>
-                                <p th:text="#{education.ms.project.one.description}"/>
+                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.one}"/></h5>
+                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.two}"/></h5>
+                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.one}"/></h5>
+                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.two}"/></h5>
+                                <div class="col-sm-12 blankDiv" />
+                                <h4><i class="fa fa-tasks"/><span th:text="' '+#{experience.duties}"/></h4>
+                                <p th:text="#{experience.garmin.description}"/>
+                                <h4><i class="fa fa-book"/><span th:text="' '+#{experience.projects}"/></h4>
+                                <dl class="dl-horizontal">
+                                    <dt><h5><span th:text="#{experience.garmin.project.one}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.one}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.two}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.two}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.three}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.three}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.four}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.four}"/></dd>
+                                </dl>
                             </div>
-                            
-                            <div class="col-sm-12 justify-text">
-                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
-                                <div class="col-sm-4">
-                                    <ul>
-                                        <li><span th:text="#{education.software.metrics}"/></li>
-                                        <li><span th:text="#{education.computer.networks}"/></li>
-                                        <li><span th:text="#{education.science.of.programming}"/></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ul>
-                                       <li><span th:text="#{education.operating.systems}"/></li>
-                                       <li><span th:text="#{education.software.modelling}"/></li>
-                                       <li><span th:text="#{education.advance.java.programming}"/></li>
-                                   </ul>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ul>
-                                       <li><span th:text="#{education.advance.java.programming}"/></li>
-                                       <li><span th:text="#{education.software.test.quality}"/></li>
-                                       <li><span th:text="#{education.software.quality.management}"/></li>
-                                   </ul>
-                                </div>
+                            <div class="well col-sm-12">
+                                <i class="fa fa-gear fa-spin"/><span th:text="#{experience.garmin.project.technology}"/>
                             </div>
+                            <div class="col-sm-12 blankDiv" />
                         </div>
                         
                         <div class="well col-sm-12">
@@ -74,41 +68,35 @@
                                 <span th:text="' '+#{experience.company.two.role}"/>
                                 <i class="fa fa-calendar"/>
                                 <span th:text="' '+#{experience.company.two.duration}"/>
-                                <a id="niprDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#niprDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
+                                <a id="niprDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#niprDetails"><i id="flashIcon" class="fa fa-plus-square"/></a>
                             </h4>
                         </div>
                         
                         <div id="niprDetails" class="col-sm-12 collapse">
                             <div class="col-sm-12 justify-text">
-                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
-                                <h5><span th:text="#{education.ms.project.one.title}"/></h5>
-                                <p th:text="#{education.ms.project.one.description}"/>
+                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.one}"/></h5>
+                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.two}"/></h5>
+                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.one}"/></h5>
+                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.two}"/></h5>
+                                <div class="col-sm-12 blankDiv" />
+                                <h4><i class="fa fa-tasks"/><span th:text="' '+#{experience.duties}"/></h4>
+                                <p th:text="#{experience.garmin.description}"/>
+                                <h4><i class="fa fa-book"/><span th:text="' '+#{experience.projects}"/></h4>
+                                <dl class="dl-horizontal">
+                                    <dt><h5><span th:text="#{experience.garmin.project.one}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.one}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.two}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.two}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.three}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.three}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.four}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.four}"/></dd>
+                                </dl>
                             </div>
-                            
-                            <div class="col-sm-12 justify-text">
-                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
-                                <div class="col-sm-4">
-                                    <ul>
-                                        <li><span th:text="#{education.software.metrics}"/></li>
-                                        <li><span th:text="#{education.computer.networks}"/></li>
-                                        <li><span th:text="#{education.science.of.programming}"/></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ul>
-                                       <li><span th:text="#{education.operating.systems}"/></li>
-                                       <li><span th:text="#{education.software.modelling}"/></li>
-                                       <li><span th:text="#{education.advance.java.programming}"/></li>
-                                   </ul>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ul>
-                                       <li><span th:text="#{education.advance.java.programming}"/></li>
-                                       <li><span th:text="#{education.software.test.quality}"/></li>
-                                       <li><span th:text="#{education.software.quality.management}"/></li>
-                                   </ul>
-                                </div>
+                            <div class="well col-sm-12">
+                                <i class="fa fa-gear fa-spin"/><span th:text="#{experience.garmin.project.technology}"/>
                             </div>
+                            <div class="col-sm-12 blankDiv" />
                         </div>
                         
                         <div class="well col-sm-12">
@@ -125,41 +113,35 @@
                                 <span th:text="' '+#{experience.company.three.role}"/>
                                 <i class="fa fa-calendar"/>
                                 <span th:text="' '+#{experience.company.three.duration}"/>
-                                <a id="yodleeDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#yodleeDetails"><i id="flashIcon" class="fa fa-chevron-circle-down"/></a>
+                                <a id="yodleeDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#yodleeDetails"><i id="flashIcon" class="fa fa-plus-square"/></a>
                             </h4>
                         </div>
                         
                         <div id="yodleeDetails" class="col-sm-12 collapse">
                             <div class="col-sm-12 justify-text">
-                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
-                                <h5><span th:text="#{education.ms.project.one.title}"/></h5>
-                                <p th:text="#{education.ms.project.one.description}"/>
+                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.one}"/></h5>
+                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.two}"/></h5>
+                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.one}"/></h5>
+                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.two}"/></h5>
+                                <div class="col-sm-12 blankDiv" />
+                                <h4><i class="fa fa-tasks"/><span th:text="' '+#{experience.duties}"/></h4>
+                                <p th:text="#{experience.garmin.description}"/>
+                                <h4><i class="fa fa-book"/><span th:text="' '+#{experience.projects}"/></h4>
+                                <dl class="dl-horizontal">
+                                    <dt><h5><span th:text="#{experience.garmin.project.one}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.one}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.two}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.two}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.three}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.three}"/></dd>
+                                    <dt><h5><span th:text="#{experience.garmin.project.four}"/></h5></dt>
+                                    <dd><span th:text="#{experience.garmin.project.description.four}"/></dd>
+                                </dl>
                             </div>
-                            
-                            <div class="col-sm-12 justify-text">
-                                <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
-                                <div class="col-sm-4">
-                                    <ul>
-                                        <li><span th:text="#{education.software.metrics}"/></li>
-                                        <li><span th:text="#{education.computer.networks}"/></li>
-                                        <li><span th:text="#{education.science.of.programming}"/></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ul>
-                                       <li><span th:text="#{education.operating.systems}"/></li>
-                                       <li><span th:text="#{education.software.modelling}"/></li>
-                                       <li><span th:text="#{education.advance.java.programming}"/></li>
-                                   </ul>
-                                </div>
-                                <div class="col-sm-4">
-                                    <ul>
-                                       <li><span th:text="#{education.advance.java.programming}"/></li>
-                                       <li><span th:text="#{education.software.test.quality}"/></li>
-                                       <li><span th:text="#{education.software.quality.management}"/></li>
-                                   </ul>
-                                </div>
+                            <div class="well col-sm-12">
+                                <i class="fa fa-gear fa-spin"/><span th:text="#{experience.garmin.project.technology}"/>
                             </div>
+                            <div class="col-sm-12 blankDiv" />
                         </div>
                     </div>
                 </article>
