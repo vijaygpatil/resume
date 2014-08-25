@@ -49,14 +49,14 @@ $(document).ready(function() {
 		}, 1000);
 	});
 	
-	$('.education-nav').click(function(event) {
+	$('.education-nav, #msDegreeDetailsCollapseIcon, #beDegreeDetailsCollapseIcon').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop : $(".page-education").offset().top
 		}, 1000);
 	});
 
-	$('.experience-nav').click(function(event) {
+	$('.experience-nav, #garminDetailsCollapseIcon, #niprDetailsCollapseIcon, #yodleeDetailsCollapseIcon').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop : $(".page-experience").offset().top
