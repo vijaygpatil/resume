@@ -296,8 +296,16 @@ span.hidden-xs {
     transition: all 0.4s ease-in-out;
 } */
 
-.blankDiv {
-	height: 20px;
+.blankDiv5 {
+	height: 10px; 
+}
+
+.blankDiv20 {
+    height: 20px;
+}
+
+dl h5 {
+	margin-top: 3px !important;
 }
 /* ==========================================================================
    Base styles

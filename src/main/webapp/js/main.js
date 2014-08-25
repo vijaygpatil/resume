@@ -78,7 +78,7 @@ $(document).ready(function() {
 	});
 	
 	$('#msDegreeDetails').on('hidden.bs.collapse', function () {
-		$('#msDegreeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
+		$('#msDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
 		$('#beDegreeDetails').removeClass('collapse in').addClass('collapse');
 		$('#beDegreeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
@@ -86,7 +86,7 @@ $(document).ready(function() {
 	});
 	
 	$('#beDegreeDetails').on('hidden.bs.collapse', function () {
-		$('#beDegreeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
+		$('#beDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
 		$('#msDegreeDetails').removeClass('collapse in').addClass('collapse');
 		$('#msDegreeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
@@ -94,7 +94,7 @@ $(document).ready(function() {
 	});
 	
 	$('#garminDetails').on('hidden.bs.collapse', function () {
-		$('#garminDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
+		$('#garminDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
 		$('#niprDetails').removeClass('collapse in').addClass('collapse');
 		$('#yodleeDetails').removeClass('collapse in').addClass('collapse');
@@ -104,7 +104,7 @@ $(document).ready(function() {
 	});
 	
 	$('#niprDetails').on('hidden.bs.collapse', function () {
-		$('#niprDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
+		$('#niprDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
 		$('#garminDetails').removeClass('collapse in').addClass('collapse');
 		$('#yodleeDetails').removeClass('collapse in').addClass('collapse');
@@ -114,7 +114,7 @@ $(document).ready(function() {
 	});
 	
 	$('#yodleeDetails').on('hidden.bs.collapse', function () {
-		$('#yodleeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
+		$('#yodleeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
 		$('#garminDetails').removeClass('collapse in').addClass('collapse');
 		$('#niprDetails').removeClass('collapse in').addClass('collapse');
