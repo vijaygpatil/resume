@@ -27,7 +27,6 @@ $(document).ready(function() {
 		$.vegas('previous');
 	});
 	
-
 	$('.welcome-nav').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
