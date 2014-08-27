@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
+    <body>
+        <div th:fragment="footer">
+            <div class="container">
+	            <footer class="row">
+		            <div class="col-sm-12 text-center">
+		            <img alt="Leo Avatar" th:src="@{/img/leo.png}" />
+		                <strong><span class="glyphicon glyphicon-copyright-mark"/><span th:text="' '+#{footer.year}"/> <a href="https://www.facebook.com/patilvijayg" title="Facebook"><span th:text="' '+#{profile.user}"/></a>. All rights reserved.</strong>
+		            </div>		          
+		        </footer>
+	        </div>
+        </div>
+    </body>
+</html>

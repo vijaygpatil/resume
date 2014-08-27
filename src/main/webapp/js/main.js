@@ -1,23 +1,17 @@
 $(document).ready(function() {
 	$.vegas('slideshow', {
 		backgrounds : [ {
-			src : 'img/slider/01.jpeg',
+			src : 'http://i.imgur.com/UFjWmNZ.jpg',
 			fade : 1000
 		}, {
-			src : 'img/slider/02.jpeg',
+			src : 'http://i.imgur.com/wwVOutY.jpg',
 			fade : 1000
 		}, {
-			src : 'img/slider/03.jpeg',
-			fade : 1000
-		}, {
-			src : 'img/slider/04.jpeg',
-			fade : 1000
-		}, {
-			src : 'img/slider/05.jpeg',
+			src : 'http://i.imgur.com/9kEAT0R.jpg',
 			fade : 1000
 		}]
 	})('overlay', {
-		src : 'img/overlays/04.png'
+		src : 'img/overlays/01.png'
 	});
 	
 	$("#vegas-next").click(function(){
@@ -48,14 +42,28 @@ $(document).ready(function() {
 		}, 1000);
 	});
 	
-	$('.education-nav, #msDegreeDetailsCollapseIcon, #beDegreeDetailsCollapseIcon').click(function(event) {
+//	$('.education-nav, #msDegreeDetailsCollapseIcon, #beDegreeDetailsCollapseIcon').click(function(event) {
+//		event.preventDefault();
+//		$('html, body').animate({
+//			scrollTop : $(".page-education").offset().top
+//		}, 1000);
+//	});
+//
+//	$('.experience-nav, #garminDetailsCollapseIcon, #niprDetailsCollapseIcon, #yodleeDetailsCollapseIcon').click(function(event) {
+//		event.preventDefault();
+//		$('html, body').animate({
+//			scrollTop : $(".page-experience").offset().top
+//		}, 1000);
+//	});
+	
+	$('.education-nav').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop : $(".page-education").offset().top
 		}, 1000);
 	});
 
-	$('.experience-nav, #garminDetailsCollapseIcon, #niprDetailsCollapseIcon, #yodleeDetailsCollapseIcon').click(function(event) {
+	$('.experience-nav').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop : $(".page-experience").offset().top
@@ -66,6 +74,20 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop : $(".page-portfolio").offset().top
+		}, 1000);
+	});
+	
+	$('#msDegreeDetailsCollapseIcon, #beDegreeDetailsCollapseIcon').click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop : $(".page-education").offset().top
+		}, 1000);
+	});
+	
+	$('#garminDetailsCollapseIcon, #niprDetailsCollapseIcon, #yodleeDetailsCollapseIcon').click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop : $(".page-experience").offset().top
 		}, 1000);
 	});
 	
@@ -276,7 +298,7 @@ $(document).ready(function() {
 			$('.contact-nav').css('color','white');
 			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .experience-nav, .portfolio-nav').css('color','');
 	},{
-		offset : function() {return $(window).height() - $(this).height();}
+		offset : function() {return $(window).height() - $(this).height() - $('.page-footer').height();}
 	});
 });
 
