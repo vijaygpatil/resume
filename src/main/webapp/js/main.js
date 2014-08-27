@@ -4,10 +4,10 @@ $(document).ready(function() {
 			src : 'http://i.imgur.com/UFjWmNZ.jpg',
 			fade : 1000
 		}, {
-			src : 'http://i.imgur.com/wwVOutY.jpg',
+			src : 'http://i.imgur.com/9kEAT0R.jpg',
 			fade : 1000
 		}, {
-			src : 'http://i.imgur.com/9kEAT0R.jpg',
+			src : 'http://i.imgur.com/wwVOutY.jpg',
 			fade : 1000
 		}]
 	})('overlay', {
