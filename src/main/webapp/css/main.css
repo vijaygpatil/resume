@@ -161,22 +161,6 @@ span.hidden-xs {
 	width:100px;
 }
 
-#page-profile .well{
-    background-image: url('../img/fabric.png');
-}
-
-#page-contact .panel{
-    background-image: url('../img/fabric.png');
-}
-
-#page-education .well{
-    background-image: url('../img/fabric.png');
-}
-
-#page-experience .well{
-    background-image: url('../img/fabric.png');
-}
-
 #page-education .well h3 {
 	margin-top: 0px !important;
 }
