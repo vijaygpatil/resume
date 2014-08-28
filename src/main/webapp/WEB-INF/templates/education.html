@@ -7,156 +7,165 @@
                     <h2 class="section-title"><i class="fa fa-graduation-cap"/><span th:text="' '+#{education.header}"/></h2>
                 </header>
                 
-                <article class="col-lg-12">
+                <article class="col-sm-12">
                     <div class="row">
-                        <div class="well col-sm-12">
-                            <h3>
-                                <span th:text="' '+#{education.masters.degree}"/>
-                                <a class="pull-right" data-toggle="modal" data-target="#myModalMSTranscript" th:title="#{education.transcript}"><i id="flashIcon" class="fa fa-file-text animated flash"/></a>
-                                <a id="msDegreeGraduationCap" class="pull-right" data-toggle="modal" data-target="#myModalMSDegree" th:title="#{education.masters.degree.certificate.title}"><i id="flashIcon" class="fa fa-graduation-cap animated flash"/></a>
-                            </h3>
-                            <h4><i class="fa fa-university"/>
-                                <a target="_blank" href="http://web.iit.edu/" th:text="' '+#{education.university.masters}"/>
-                                <i class="fa fa-calendar"/>
-                                <span th:text="' '+#{education.masters.academic.year}"/>
-                                <i class="fa fa-star"/>
-                                <span th:text="' '+#{education.masters.gpa}"/>
-                                <a id="msDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#msDegreeDetails"><i id="msDegreeDetailsCollapseIcon" class="fa fa-plus-square"/></a>
-                            </h4>
-                        </div>
+                        <div class="panel-group" id="accordion1">
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3>
+                                        <span th:text="' '+#{education.masters.degree}"/>
+                                        <a id="msDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-parent="#accordion1" href="#msDegreeDetails"><i class="fa fa-minus-square"/></a>
+			                            <a id="msDegreeTranscript" class="pull-right" data-toggle="modal" data-target="#myModalMSTranscript" th:title="#{education.transcript}"><i id="flashIcon" class="fa fa-file-text animated flash"/></a>
+                                        <a id="msDegreeGraduationCap" class="pull-right" data-toggle="modal" data-target="#myModalMSDegree" th:title="#{education.masters.degree.certificate.title}"><i id="flashIcon" class="fa fa-graduation-cap animated flash"/></a>
+                                    </h3>
+		                            <h4><i class="fa fa-university"/>
+		                                <a target="_blank" href="http://web.iit.edu/" th:text="' '+#{education.university.masters}"/>
+		                                <i class="fa fa-calendar"/>
+		                                <span th:text="' '+#{education.masters.academic.year}"/>
+		                                <i class="fa fa-star"/>
+		                                <span th:text="' '+#{education.masters.gpa}"/>
+		                            </h4>
+                                </div>
+                                
+                                <div id="msDegreeDetails" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="col-sm-12 justify-text">
+                                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
+                                            <h5><span th:text="#{education.ms.project.one.title}"/></h5>
+                                            <p th:text="#{education.ms.project.one.description}"/>
+                                        </div>
                         
-                        <div id="msDegreeDetails" class="col-sm-12 collapse">
-                            <div class="col-sm-12 justify-text">
-	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
-	                            <h5><span th:text="#{education.ms.project.one.title}"/></h5>
-	                            <p th:text="#{education.ms.project.one.description}"/>
-	                        </div>
-	                        
-	                        <div class="col-sm-12 justify-text">
-	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
-	                            <ul class="list-inline">
-                                    <li><span th:text="#{education.software.metrics}"/></li>
-                                    <li><span th:text="#{education.computer.networks}"/></li>
-                                    <li><span th:text="#{education.science.of.programming}"/></li>
-                                    <li><span th:text="#{education.operating.systems}"/></li>
-                                    <li><span th:text="#{education.software.modelling}"/></li>
-                                    <li><span th:text="#{education.advance.java.programming}"/></li>
-                                    <li><span th:text="#{education.advance.java.programming}"/></li>
-                                    <li><span th:text="#{education.software.test.quality}"/></li>
-                                    <li><span th:text="#{education.software.quality.management}"/></li>
-								</ul>
-	                        </div>
-	                        <div class="col-sm-12 blankDiv20" />
-                        </div>
-                        
-                        
-                        <div class="well col-sm-12">
-                            <h3>
-                                <span th:text="' '+#{education.bachelors.degree}"/>
-                                <a class="pull-right" data-toggle="modal" data-target="#myModalBETranscript" th:title="#{education.transcript}"><i id="flashIcon" class="fa fa-file-text animated flash"/></a>
-                                <a id="beDegreeGraduationCap" class="pull-right" data-toggle="modal" data-target="#myModalBEDegree" th:title="#{education.bachelors.degree.transcript.title}"><i id="flashIcon" class="fa fa-graduation-cap animated flash"/></a>
-                            </h3>
-                            <h4><i class="fa fa-university"/>
-                                <a target="_blank" href="http://www.somaiya.edu/VidyaVihar/kjsce" th:text="' '+#{education.university.bachelors}"/>
-                                <i class="fa fa-calendar"/>
-                                <span th:text="' '+#{education.bachelors.academic.year}"/>
-                                <i class="fa fa-star"/>
-                                <span th:text="' '+#{education.bachelors.class}"/>
-                                <a id="beDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-target="#beDegreeDetails"><i id="beDegreeDetailsCollapseIcon" class="fa fa-plus-square"/></a>
-                            </h4>
-                        </div>
-                        
-                        <div id="beDegreeDetails" class="col-sm-12 collapse">
-	                        <div class="col-sm-12 justify-text">
-	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.be.project.header}"/></h4>
-	                            <h5><span th:text="#{education.be.project.title}"/></h5>
-	                            <p th:text="#{education.be.project.description}"/>
-	                        </div>
-	                        
-	                        <div class="col-sm-12 justify-text">
-	                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.becourses.header}"/></h4>
-	                            <h5><span th:text="#{education.be.firstYear.header}"/></h5>
-	                            <p th:text="#{education.becourses.firstYear}"/>
-	                            <h5><span th:text="#{education.be.secondYear.header}"/></h5>
-	                            <p th:text="#{education.becourses.secondYear}"/>
-	                            <h5><span th:text="#{education.be.thirdYear.header}"/></h5>
-	                            <p th:text="#{education.becourses.thirdYear}"/>
-	                            <h5><span th:text="#{education.be.fourthYear.header}"/></h5>
-	                            <p th:text="#{education.becourses.fourthYear}"/>
-	                        </div>
-	                        <div class="col-sm-12 blankDiv20" />
+                                        <div class="col-sm-12 justify-text">
+			                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.mscourses.header}"/></h4>
+			                            <ul class="list-inline">
+			                                <li><span th:text="#{education.software.metrics}"/></li>
+			                                <li><span th:text="#{education.computer.networks}"/></li>
+			                                <li><span th:text="#{education.science.of.programming}"/></li>
+			                                <li><span th:text="#{education.operating.systems}"/></li>
+			                                <li><span th:text="#{education.software.modelling}"/></li>
+			                                <li><span th:text="#{education.advance.java.programming}"/></li>
+			                                <li><span th:text="#{education.advance.java.programming}"/></li>
+			                                <li><span th:text="#{education.software.test.quality}"/></li>
+			                                <li><span th:text="#{education.software.quality.management}"/></li>
+			                            </ul>
+			                        </div>
+			                      </div>
+			                    </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3>
+                                        <span th:text="' '+#{education.bachelors.degree}"/>
+                                        <a id="beDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-parent="#accordion1" href="#beDegreeDetails"><i class="fa fa-plus-square"/></a>
+                                        <a id="beDegreeTranscript" class="pull-right" data-toggle="modal" data-target="#myModalBETranscript" th:title="#{education.transcript}"><i id="flashIcon" class="fa fa-file-text animated flash"/></a>
+                                        <a id="beDegreeGraduationCap" class="pull-right" data-toggle="modal" data-target="#myModalBEDegree" th:title="#{education.bachelors.degree.transcript.title}"><i id="flashIcon" class="fa fa-graduation-cap animated flash"/></a>
+                                    </h3>
+		                            <h4><i class="fa fa-university"/>
+		                                <a target="_blank" href="http://www.somaiya.edu/VidyaVihar/kjsce" th:text="' '+#{education.university.bachelors}"/>
+		                                <i class="fa fa-calendar"/>
+		                                <span th:text="' '+#{education.bachelors.academic.year}"/>
+		                                <i class="fa fa-star"/>
+		                                <span th:text="' '+#{education.bachelors.class}"/>
+		                            </h4>
+                                </div>
+                                
+                                <div id="beDegreeDetails" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col-sm-12 justify-text">
+                                            <h4><i class="fa fa-book"/> <span th:text="' '+#{education.be.project.header}"/></h4>
+                                            <h5><span th:text="#{education.be.project.title}"/></h5>
+                                            <p th:text="#{education.be.project.description}"/>
+                                        </div>
+    
+									    <div class="col-sm-12 justify-text">
+									        <h4><i class="fa fa-book"/> <span th:text="' '+#{education.becourses.header}"/></h4>
+									        <h5><span th:text="#{education.be.firstYear.header}"/></h5>
+									        <p th:text="#{education.becourses.firstYear}"/>
+									        <h5><span th:text="#{education.be.secondYear.header}"/></h5>
+									        <p th:text="#{education.becourses.secondYear}"/>
+									        <h5><span th:text="#{education.be.thirdYear.header}"/></h5>
+									        <p th:text="#{education.becourses.thirdYear}"/>
+									        <h5><span th:text="#{education.be.fourthYear.header}"/></h5>
+									        <p th:text="#{education.becourses.fourthYear}"/>
+									    </div>
+                                    </div>
+                                </div>             
+                            </div>
                         </div>
                         
                         <div class="modal fade" id="myModalMSDegree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.masters.degree.certificate.title}"/></h4>
-                              </div>
-                              <div class="modal-body">
-                                <img th:alt="#{education.masters.degree.certificate.title}" th:src="@{/img/msDegreeCert.jpg}"/>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.masters.degree.certificate.title}"/></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img th:alt="#{education.masters.degree.certificate.title}" th:src="@{/img/msDegreeCert.jpg}"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         
                         <div class="modal fade" id="myModalBEDegree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.bachelors.degree.certificate.title}"/></h4>
-                              </div>
-                              <div class="modal-body">
-                               <img th:alt="#{education.bachelors.degree.certificate.title}" th:src="@{/img/beDegreeCert.jpg}"/>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.bachelors.degree.certificate.title}"/></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img th:alt="#{education.bachelors.degree.certificate.title}" th:src="@{/img/beDegreeCert.jpg}"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         
                         <div class="modal fade" id="myModalBETranscript" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.bachelors.degree.transcript.title}"/></h4>
-                              </div>
-                              <div class="modal-body">
-                               <img th:alt="#{education.bachelors.degree.transcript.title}" th:src="@{/img/BEITTranscript1.jpg}"/>
-                               <img th:alt="#{education.bachelors.degree.transcript.title}" th:src="@{/img/BEITTranscript2.jpg}"/>
-                               <img th:alt="#{education.bachelors.degree.transcript.title}" th:src="@{/img/BEITTranscript3.jpg}"/>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.bachelors.degree.transcript.title}"/></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img th:alt="#{education.bachelors.degree.transcript.title}" th:src="@{/img/BEITTranscript1.jpg}"/>
+                                        <img th:alt="#{education.bachelors.degree.transcript.title}" th:src="@{/img/BEITTranscript2.jpg}"/>
+                                        <img th:alt="#{education.bachelors.degree.transcript.title}" th:src="@{/img/BEITTranscript3.jpg}"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         
                         <div class="modal fade" id="myModalMSTranscript" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.masters.degree.transcript.title}"/></h4>
-                              </div>
-                              <div class="modal-body">
-                               <img th:alt="#{education.masters.degree.transcript.title}" th:src="@{/img/MSCSTranscript1.jpg}"/>
-                               <img th:alt="#{education.masters.degree.transcript.title}" th:src="@{/img/MSCSTranscript2.jpg}"/>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                              </div>
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel"><span th:text="#{education.masters.degree.transcript.title}"/></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img th:alt="#{education.masters.degree.transcript.title}" th:src="@{/img/MSCSTranscript1.jpg}"/>
+                                        <img th:alt="#{education.masters.degree.transcript.title}" th:src="@{/img/MSCSTranscript2.jpg}"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
+                        
                     </div>
                 </article>
             </div>

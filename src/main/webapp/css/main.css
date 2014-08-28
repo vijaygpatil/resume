@@ -270,11 +270,11 @@ span.hidden-xs {
 	width:100%;
 }
 
-#beDegreeDetailsCollapse, #msDegreeDetailsCollapse, #yodleeDetailsCollapse, #niprDetailsCollapse, #garminDetailsCollapse{
+/* #beDegreeDetailsCollapse, #msDegreeDetailsCollapse, #yodleeDetailsCollapse, #niprDetailsCollapse, #garminDetailsCollapse{
 	font-size: 24px;
-}
+} */
 
-#msDegreeGraduationCap i, #beDegreeGraduationCap i {
+#msDegreeGraduationCap i, #beDegreeGraduationCap i, #msDegreeTranscript i, #beDegreeTranscript i {
 	margin-right: 10px;
 }
 
@@ -310,7 +310,7 @@ html,body {
 }
 
 body {
-	background-image : url(../img/retina_wood.png);
+	background-image : url(../img/retina_wood-1024x300.png);
 }
 
 h1 {
@@ -439,4 +439,19 @@ h4,h5 {
    ========================================================================== */
 .section-title {
 	padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.panel-heading h3 {
+	margin-top: 8px;
 }

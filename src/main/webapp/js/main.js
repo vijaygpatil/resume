@@ -42,20 +42,6 @@ $(document).ready(function() {
 		}, 1000);
 	});
 	
-//	$('.education-nav, #msDegreeDetailsCollapseIcon, #beDegreeDetailsCollapseIcon').click(function(event) {
-//		event.preventDefault();
-//		$('html, body').animate({
-//			scrollTop : $(".page-education").offset().top
-//		}, 1000);
-//	});
-//
-//	$('.experience-nav, #garminDetailsCollapseIcon, #niprDetailsCollapseIcon, #yodleeDetailsCollapseIcon').click(function(event) {
-//		event.preventDefault();
-//		$('html, body').animate({
-//			scrollTop : $(".page-experience").offset().top
-//		}, 1000);
-//	});
-	
 	$('.education-nav').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
@@ -77,20 +63,6 @@ $(document).ready(function() {
 		}, 1000);
 	});
 	
-	$('#msDegreeDetailsCollapseIcon, #beDegreeDetailsCollapseIcon').click(function(event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop : $(".page-education").offset().top
-		}, 1000);
-	});
-	
-	$('#garminDetailsCollapseIcon, #niprDetailsCollapseIcon, #yodleeDetailsCollapseIcon').click(function(event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop : $(".page-experience").offset().top
-		}, 1000);
-	});
-	
 	$('.contact-nav').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
@@ -101,47 +73,31 @@ $(document).ready(function() {
 	$('#msDegreeDetails').on('hidden.bs.collapse', function () {
 		$('#msDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
-		$('#beDegreeDetails').removeClass('collapse in').addClass('collapse');
-		$('#beDegreeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#msDegreeDetailsCollapse i').removeClass('fa-plus-square').addClass('fa-minus-square');
+		$('#msDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
 	$('#beDegreeDetails').on('hidden.bs.collapse', function () {
 		$('#beDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
-		$('#msDegreeDetails').removeClass('collapse in').addClass('collapse');
-		$('#msDegreeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#beDegreeDetailsCollapse i').removeClass('fa-plus-square').addClass('fa-minus-square');
+		$('#beDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
 	$('#garminDetails').on('hidden.bs.collapse', function () {
 		$('#garminDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
-		$('#niprDetails').removeClass('collapse in').addClass('collapse');
-		$('#yodleeDetails').removeClass('collapse in').addClass('collapse');
-		$('#niprDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#yodleeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#garminDetailsCollapse i').removeClass('fa-plus-square').addClass('fa-minus-square');
+		$('#garminDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
 	$('#niprDetails').on('hidden.bs.collapse', function () {
 		$('#niprDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
-		$('#garminDetails').removeClass('collapse in').addClass('collapse');
-		$('#yodleeDetails').removeClass('collapse in').addClass('collapse');
-		$('#garminDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#yodleeDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#niprDetailsCollapse i').removeClass('fa-plus-square').addClass('fa-minus-square');
+		$('#niprDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
 	$('#yodleeDetails').on('hidden.bs.collapse', function () {
 		$('#yodleeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	}).on('shown.bs.collapse', function () {
-		$('#garminDetails').removeClass('collapse in').addClass('collapse');
-		$('#niprDetails').removeClass('collapse in').addClass('collapse');
-		$('#garminDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#niprDetailsCollapse i').removeClass('fa-minus-square').addClass('fa-plus-square');
-		$('#yodleeDetailsCollapse i').removeClass('fa-plus-square').addClass('fa-minus-square');
+		$('#yodleeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
 	$('#page-welcome header h1').addClass('animated fadeInDownBig');
