@@ -1,25 +1,25 @@
 $(document).ready(function() {
-//	$.vegas('slideshow', {
-//		backgrounds : [ {
-//			src : 'http://i.imgur.com/UFjWmNZ.jpg',
-//			fade : 1000
-//		}, {
-//			src : 'http://i.imgur.com/9kEAT0R.jpg',
-//			fade : 1000
-//		}, {
-//			src : 'http://i.imgur.com/wwVOutY.jpg',
-//			fade : 1000
-//		}]
-//	})('overlay', {
-//		src : 'img/overlays/01.png'
-//	});
+	$.vegas('slideshow', {
+		backgrounds : [ {
+			src : 'http://i.imgur.com/UFjWmNZ.jpg',
+			fade : 1000
+		}, {
+			src : 'http://i.imgur.com/9kEAT0R.jpg',
+			fade : 1000
+		}, {
+			src : 'http://i.imgur.com/wwVOutY.jpg',
+			fade : 1000
+		}]
+	})('overlay', {
+		src : 'img/overlays/01.png'
+	});
 	
-//	$("#vegas-next").click(function(){
-//		$.vegas('next');
-//	});
-//	$("#vegas-prev").click(function(){
-//		$.vegas('previous');
-//	});
+	$("#vegas-next").click(function(){
+		$.vegas('next');
+	});
+	$("#vegas-prev").click(function(){
+		$.vegas('previous');
+	});
 	
 	$('.welcome-nav').click(function(event) {
 		event.preventDefault();
@@ -70,33 +70,37 @@ $(document).ready(function() {
 		}, 1000);
 	});
 	
-	$('#msDegreeDetails').on('hidden.bs.collapse', function () {
+	$('#msDegreeDetailsCollapse i').click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop : $('#accordion1 > .panel:first-child').offset().top - 55
+		}, 1000);
+	});
+	
+	$('#beDegreeDetailsCollapse i').click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({
+			scrollTop : $('#accordion1 > .panel:nth-child(2)').offset().top +110
+		}, 1000);
+	});
+	
+	$('#msDegreeDetails').on('hidden.bs.collapse shown.bs.collapse', function () {
 		$('#msDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
-	}).on('shown.bs.collapse', function () {
-		$('#msDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
-	$('#beDegreeDetails').on('hidden.bs.collapse', function () {
-		$('#beDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
-	}).on('shown.bs.collapse', function () {
+	$('#beDegreeDetails').on('hidden.bs.collapse shown.bs.collapse', function () {
 		$('#beDegreeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
-	$('#garminDetails').on('hidden.bs.collapse', function () {
-		$('#garminDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
-	}).on('shown.bs.collapse', function () {
+	$('#garminDetails').on('hidden.bs.collapse shown.bs.collapse', function () {
 		$('#garminDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
-	$('#niprDetails').on('hidden.bs.collapse', function () {
-		$('#niprDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
-	}).on('shown.bs.collapse', function () {
+	$('#niprDetails').on('hidden.bs.collapse shown.bs.collapse', function () {
 		$('#niprDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
-	$('#yodleeDetails').on('hidden.bs.collapse', function () {
-		$('#yodleeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
-	}).on('shown.bs.collapse', function () {
+	$('#yodleeDetails').on('hidden.bs.collapse shown.bs.collapse', function () {
 		$('#yodleeDetailsCollapse i').toggleClass('fa-minus-square fa-plus-square');
 	});
 	
