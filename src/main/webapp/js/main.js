@@ -1,25 +1,25 @@
 $(document).ready(function() {
-	$.vegas('slideshow', {
-		backgrounds : [ {
-			src : 'http://i.imgur.com/UFjWmNZ.jpg',
-			fade : 1000
-		}, {
-			src : 'http://i.imgur.com/9kEAT0R.jpg',
-			fade : 1000
-		}, {
-			src : 'http://i.imgur.com/wwVOutY.jpg',
-			fade : 1000
-		}]
-	})('overlay', {
-		src : 'img/overlays/01.png'
-	});
+//	$.vegas('slideshow', {
+//		backgrounds : [ {
+//			src : 'http://i.imgur.com/UFjWmNZ.jpg',
+//			fade : 1000
+//		}, {
+//			src : 'http://i.imgur.com/9kEAT0R.jpg',
+//			fade : 1000
+//		}, {
+//			src : 'http://i.imgur.com/wwVOutY.jpg',
+//			fade : 1000
+//		}]
+//	})('overlay', {
+//		src : 'img/overlays/01.png'
+//	});
 	
-	$("#vegas-next").click(function(){
-		$.vegas('next');
-	});
-	$("#vegas-prev").click(function(){
-		$.vegas('previous');
-	});
+//	$("#vegas-next").click(function(){
+//		$.vegas('next');
+//	});
+//	$("#vegas-prev").click(function(){
+//		$.vegas('previous');
+//	});
 	
 	$('.welcome-nav').click(function(event) {
 		event.preventDefault();
