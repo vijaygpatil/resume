@@ -70,17 +70,17 @@ $(document).ready(function() {
 		}, 1000);
 	});
 	
-	$('#msDegreeDetailsCollapse i').click(function(event) {
+	$('#msDegreeDetailsCollapse i,#beDegreeDetailsCollapse i').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
-			scrollTop : $('#accordion1 > .panel:first-child').offset().top - 55
+			scrollTop : $('#page-education').offset().top
 		}, 1000);
 	});
 	
-	$('#beDegreeDetailsCollapse i').click(function(event) {
+	$('#garminDetailsCollapse i,#niprDetailsCollapse i,#yodleeDetailsCollapse i').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
-			scrollTop : $('#accordion1 > .panel:nth-child(2)').offset().top +110
+			scrollTop : $('#page-experience').offset().top
 		}, 1000);
 	});
 	

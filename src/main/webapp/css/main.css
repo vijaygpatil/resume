@@ -422,12 +422,12 @@ h4,h5 {
 .contact-me {
 	background: transparent;
 	color: #fff;
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 	text-transform: uppercase;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;	
+	transition: all 0.3s ease-in-out;
 }
 
 .contact-me:hover {

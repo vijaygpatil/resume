@@ -15,7 +15,7 @@
                                 <div class="panel-heading">
                                     <h3>
                                         <span th:text="' '+#{education.masters.degree}"/>
-                                        <a id="msDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-parent="#accordion1" href="#msDegreeDetails"><i class="fa fa-minus-square"/></a>
+                                        <a id="msDegreeDetailsCollapse" class="pull-right" data-toggle="collapse" data-parent="#accordion1" href="#msDegreeDetails"><i class="fa fa-plus-square"/></a>
 			                            <a id="msDegreeTranscript" class="pull-right" data-toggle="modal" data-target="#myModalMSTranscript" th:title="#{education.transcript}"><i id="flashIcon" class="fa fa-file-text animated flash"/></a>
                                         <a id="msDegreeGraduationCap" class="pull-right" data-toggle="modal" data-target="#myModalMSDegree" th:title="#{education.masters.degree.certificate.title}"><i id="flashIcon" class="fa fa-graduation-cap animated flash"/></a>
                                     </h3>
@@ -28,7 +28,7 @@
 		                            </h4>
                                 </div>
                                 
-                                <div id="msDegreeDetails" class="panel-collapse collapse in">
+                                <div id="msDegreeDetails" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <div class="col-sm-12 justify-text">
                                             <h4><i class="fa fa-book"/> <span th:text="' '+#{education.ms.project.header}"/></h4>
