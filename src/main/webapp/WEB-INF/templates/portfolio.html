@@ -5,45 +5,53 @@
 	<div th:fragment="portfolio">
 		<div class="container">
 			<header>
-				<h2 class="section-title">
-					<i class="fa fa-folder" /><span th:text="' '+#{portfolio.header}" />
-				</h2>
+				<h2 class="section-title"><i class="fa fa-folder" /><span th:text="' '+#{portfolio.header}" /></h2>
 			</header>
-
-			<article class="col-sm-12">
-				<div class="row">
-					<div id="carousel-example-generic" class="carousel slide"
-						data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner">
-							<div class="item active">
-								<img src="" alt="" />
-								<div class="carousel-caption"></div>
-							</div>
-							<div class="item">
-								<img src="" alt="" />
-								<div class="carousel-caption"></div>
-							</div>
-						</div>
-
-						<!-- Controls -->
-						<a class="left carousel-control" href="#carousel-example-generic"
-							role="button" data-slide="prev"> <span
-							class="glyphicon glyphicon-chevron-left"></span>
-						</a> <a class="right carousel-control"
-							href="#carousel-example-generic" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-						</a>
-					</div>
-				</div>
-			</article>
+    
+            <article class="col-sm-12">
+                <div class="row">
+                    <div id="grid-controls-wrapper">
+                        <ul class="nav nav-pills center-pills grid-controls">
+                            <li class="active filter"><a href="javascript:void(0)" data-filter="*"><h4><span th:text="#{portfolio.all}"/></h4></a></li>           
+                            <li class="filter"><a href="javascript:void(0)"  data-filter=".photography"><h4><span th:text="#{portfolio.photography}"/></h4></a></li>
+                            <li class="filter" ><a href="javascript:void(0)" data-filter=".web"><h4><span th:text="#{portfolio.web}"/></h4></a></li>
+                        </ul>
+                    </div> 
+	            
+	                <div>
+                        <ul id="grid" class="grid-wrapper">
+                            <li class="mix web" >
+	                           <a href="img/portfolio/large/resume.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/resume_th.png"  alt="" /></a>
+	                           <h4><span id="resumeLink" th:text="#{portfolio.web.resume}"/></h4>
+                            </li>
+                            <li class="mix web">
+                                <a href="img/portfolio/large/wordpress.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/wordpress_th.png" alt="" /></a>
+                                <h4><span id="wordpressLink" th:text="#{portfolio.web.wordpress}"/></h4>
+                            </li>
+                            <li class="mix web">
+                                <a href="img/portfolio/large/dashboard.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/dashboard_th.png" alt="" /></a>
+                                <h4><span id="dashboardLink" th:text="#{portfolio.web.dashboard}"/></h4>
+                            </li>
+                            <li class="mix web">
+                                <a href="img/portfolio/large/06.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/06.png" alt="" /></a>
+                                <h4><span id="labLink" th:text="#{portfolio.web.lab}"/></h4>
+                            </li>
+                            <li class="mix photography">
+                                <a href="img/portfolio/large/03.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/03.png" alt="" /></a>
+                                <h4><span id="resumeLink" th:text="#{portfolio.web.resume}"/></h4>
+                            </li>
+                            <li class="mix photography">
+                                <a href="img/portfolio/large/04.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/04.png" alt="" /></a>
+                                <h4><span id="resumeLink" th:text="#{portfolio.web.resume}"/></h4>
+                            </li>
+                            <li class="mix photography">
+                                <a href="img/portfolio/large/05.png"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/small/05.png" alt="" /></a>
+                                <h4><span id="resumeLink" th:text="#{portfolio.web.resume}"/></h4>
+                            </li>
+                        </ul>
+	                </div>
+	            </div>
+            </article>
 		</div>
 	</div>
 </body>

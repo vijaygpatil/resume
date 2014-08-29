@@ -28,7 +28,7 @@ $(document).ready(function() {
 		}, 1000);
 	});
 
-	$('.profile-nav').click(function(event) {
+	$('.profile-nav, .contact-me').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop : $(".page-profile").offset().top
@@ -259,6 +259,64 @@ $(document).ready(function() {
 			$('.skills-nav, .profile-nav, .welcome-nav, .education-nav, .experience-nav, .portfolio-nav').css('color','');
 	},{
 		offset : function() {return $(window).height() - $(this).height() - $('.page-footer').height();}
+	});
+	
+	
+	$('ul.nav-pills li a').click(function (e) {
+        $('ul.nav-pills li.active').removeClass('active');
+        $(this).parent('li').addClass('active');
+    });
+	
+	$(window).load(function(){
+	    var $container = $('.grid-wrapper');
+	    $container.isotope({
+	        filter: '*',
+	        animationOptions: {
+	            duration: 750,
+	            easing: 'linear',
+	            queue: false
+	        }
+	    });
+	 
+	    $('.grid-controls li a').click(function(){
+	        $('.grid-controls .current').removeClass('current');
+	        $(this).addClass('current');
+	 
+	        var selector = $(this).attr('data-filter');
+	        $container.isotope({
+	            filter: selector,
+	            animationOptions: {
+	                duration: 750,
+	                easing: 'linear',
+	                queue: false
+	            }
+	         });
+	         return false;
+	    });
+	});
+	
+	$('.grid-wrapper').magnificPopup({
+		  delegate: 'a', 
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+	
+	$('#resumeLink').click(function() {
+		window.open('http://patilvijayg.com/resume');
+	});
+	
+	$('#wordpressLink').click(function() {
+		window.open('http://patilvijayg.com/wordpress');
+	});
+	
+	$('#labLink').click(function() {
+		window.open('http://patilvijayg.com/lab');
+	});
+	
+	$('#dashboardLink').click(function() {
+		window.open('http://patilvijayg.com/dashboard');
 	});
 });
 

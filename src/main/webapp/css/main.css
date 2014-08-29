@@ -309,17 +309,14 @@ html,body {
 	font-family: 'Roboto', sans-serif;
 }
 
-/* body {
-	background-image : url(../img/retina_wood-1024x300.png);
-} */
-
 h1 {
     font-size: 4.5em;
 }
 
-#page-welcome h1, #page-welcome h2 {
+#page-welcome h1, #page-welcome h2, .contact-me {
 	font-family: 'Lato', sans-serif;
 	color: #fff !important;
+	font-weight: 600;
 }
 
 h2,h3,h4,h5,h6 {
@@ -422,17 +419,18 @@ h4,h5 {
 .contact-me {
 	background: transparent;
 	color: #fff;
-	border: 1px solid #fff;
 	text-transform: uppercase;
+	border: 0.15em solid #fff;
 	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .contact-me:hover {
-	border-color: #fff;
-	color: #3498db;
+    border-color: #fff;
+    color: #fff;
+    background: dodgerblue;
 }
 /* ==========================================================================
    Dividers
@@ -454,4 +452,141 @@ h4,h5 {
 
 .panel-heading h3 {
 	margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+#grid-controls-wrapper{
+    text-align: center;
+    float:none;
+    width:100%;
+
+}
+
+.center-pills { 
+    display: inline-block; 
+}
+#grid .mix{
+    width: 200px;
+    height: 150px;
+    vertical-align: top;
+    margin:20px 20px 20px 0 ;
+    color: #fff;
+    text-align: center;
+    display: inline-block; 
+
+}
+
+
+#grid .mix .thumbnail{
+    border:2px thin #F7F7F7;
+    padding:0;
+    border-radius:0;
+}
+
+
+#grid .mix .overlay{
+    width: 200px;
+    height: 150px;
+    position:absolute;
+    opacity:0;
+
+}
+
+#grid .mix .overlay:hover{
+     opacity:.8;
+}
+
+#grid .mix .overlay i{
+    font-size: 2em;
+    opacity: 1;
+    color: #fff;
+    padding-top: 30%;
+}
+
+ 
+ 
+.isotope-item {
+    z-index: 2;
+}
+ 
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+ 
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+ 
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+ 
+/**** disabling Isotope CSS3 transitions ****/
+ 
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+#grid .mix a img {
+    border: 0;
+}
+#grid .mix a img {
+    max-width: 100%;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: gainsboro !important;
+}
+
+
+
+#grid .mix .overlay {
+    background: gainsboro;
+}
+
+
+.grid-wrapper {
+	overflow: visible !important;
+}
+
+#resumeLink, #wordpressLink, #dashboardLink, #labLink {
+    cursor: pointer;
+}
+
+#resumeLink:hover, #wordpressLink:hover, #dashboardLink:hover, #labLink:hover {
+    text-decoration:underline;
 }
