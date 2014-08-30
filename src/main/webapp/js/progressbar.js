@@ -8,10 +8,10 @@
     //Progressbar Update Function
     Progressbar.prototype.update = function (value) {
         var $div = this.$element.find('div');
-        var $span = $div.find('span');
+        //var $span = $div.find('span');
         $div.attr('aria-valuenow', value);
         $div.css('width', value + '%');
-        $span.text(value + '% Complete');
+        //$span.text(value + '% Complete');
     };
 
     //Progressbar Finish Function

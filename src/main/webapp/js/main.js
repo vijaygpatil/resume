@@ -21,6 +21,8 @@ $(document).ready(function() {
 		$.vegas('previous');
 	});
 	
+	$('.page-profile table tr td:first-child').css('padding-top', '0');
+	
 	$('.welcome-nav').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
@@ -145,13 +147,12 @@ $(document).ready(function() {
 			triggerOnce: true
 	});
 	
-	$('#myProgressbar6').waypoint(function() {
-		$('#myProgressbar1').progressbar(40);
-		$('#myProgressbar2').progressbar(20);
-		$('#myProgressbar3').progressbar(80);
-		$('#myProgressbar4').progressbar(60);
-		$('#myProgressbar5').progressbar(50);
-		$('#myProgressbar6').progressbar(90);
+	$('#myProgressbar5').waypoint(function() {
+		$('#myProgressbar1').progressbar(75);
+		$('#myProgressbar2').progressbar(80);
+		$('#myProgressbar3').progressbar(85);
+		$('#myProgressbar4').progressbar(90);
+		$('#myProgressbar5').progressbar(70);
 	},{
 		offset : 'bottom-in-view'
 	});
@@ -318,5 +319,7 @@ $(document).ready(function() {
 	$('#dashboardLink').click(function() {
 		window.open('http://patilvijayg.com/dashboard');
 	});
+	
+	
 });
 

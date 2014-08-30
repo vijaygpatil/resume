@@ -11,9 +11,9 @@
 	            <article class="col-sm-12">
 	                <div class="row">
 	                    <div class="well col-lg-12">
-	                        <div class="pull-right">
+	                        <!-- <div class="pull-right">
 	                            <a class="btn btn-primary" th:href="@{/download/Vijay_Patil_Web_Application_Develop.pdf}" download="Vijay_Patil_Web_Application_Develop"><i class="fa fa-print"/> <span th:text="#{profile.print.resume}"/></a>
-	                        </div>
+	                        </div> -->
 							<h3><span th:text="#{profile.user}+' '"/><span id="myAge"/></h3>
 							<h4><i class="fa fa-globe"/>
 								<a target="_blank" href="https://www.google.com/maps/dir/Olathe,+KS/Olathe,+KS" th:text="' '+#{profile.user.current.location}"/>
@@ -23,7 +23,7 @@
 								<span th:text="' '+#{profile.user.language1}"/>
 								<span id="hindiLanguage" th:text="' '+#{profile.user.language2}"/>
 								<span id="marathiLanguage" th:text="' '+#{profile.user.language3}"/>
-								<span id="gujaratiLanguage" th:text="' '+#{profile.user.language4}"/>
+								<span id="gujaratiLanguage" th:text="' '+#{profile.user.language4}"/> 
 							</h4>
 						</div>
 						<div class="col-lg-12">
@@ -38,17 +38,24 @@
 		                                    </div>
 	                                        <div id="page-profile-facebook"><a target="_blank" href="https://www.facebook.com/patilvijayg" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"/></a></div>
 	                                    </td>
-	                                    <td><p class="justify-text" th:text="#{profile.user.topic.bio.description}"/></td>
+	                                    <td>
+	                                       <p class="justify-text" th:utext="#{profile.user.topic.bio.description.p1}"/><p class="justify-text" th:utext="#{profile.user.topic.bio.description.p2}"/><p class="justify-text" th:utext="#{profile.user.topic.bio.description.p3}"/>
+	                                       <hr/>
+	                                    </td>
 	                                </tr>
 	                                <tr>
 	                                    <td>
 	                                        <div class="profile-topic"><h4 th:text="#{profile.user.topic.experience}"/></div>
 	                                        <div class="interest-logo">
 	                                            <i class="fa fa-desktop"/>
+	                                            <i class="fa fa-code"/>
 	                                        </div>
 	                                        <div id="page-profile-linkedin"><a target="_blank" href="https://www.linkedin.com/in/patilvijayg" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"/></a></div>
 	                                    </td>
-	                                    <td><p class="justify-text" th:text="#{profile.user.topic.experience.description}"/></td>
+	                                    <td>
+	                                       <p class="justify-text" th:utext="#{profile.user.topic.experience.description.p1}"/><p class="justify-text" th:utext="#{profile.user.topic.experience.description.p2}"/>
+	                                       <hr/>
+	                                    </td>
 	                                </tr>
 	                                <tr>
 	                                    <td>
@@ -69,7 +76,10 @@
 		                                        <i class="fa fa-google"/>
 		                                    </div>
 	                                    </td>
-	                                    <td><p class="justify-text" th:text="#{profile.user.topic.interest.description}"/></td>
+	                                    <td>
+	                                       <p class="justify-text" th:utext="#{profile.user.topic.interest.description}"/>
+	                                       <hr/>
+	                                    </td>
 	                                </tr>
 	                            </tbody>
 	                        </table>

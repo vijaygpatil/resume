@@ -194,30 +194,33 @@ span.hidden-xs {
 }
 
 #hindiLanguage {
-	color: #428bca !important;
+	color: black !important;
 	cursor:pointer;
 }
 
 #hindiLanguage:hover {
-	color: #2a6496 !important;
+	color: black !important;
+	text-decoration:underline;
 }
 
 #marathiLanguage {
-    color: #428bca !important;
+    color: black !important;
     cursor:pointer;
 }
 
 #marathiLanguage:hover {
-    color: #2a6496 !important;
+    color: black !important;
+    text-decoration:underline;
 }
 
 #gujaratiLanguage {
-    color: #428bca !important;
+    color: black !important;
     cursor:pointer;
 }
 
 #gujaratiLanguage:hover {
-    color: #2a6496 !important;
+    color: black !important;
+    text-decoration:underline;
 }
 
 #page-profile .borderless td {
@@ -227,7 +230,7 @@ span.hidden-xs {
 #page-profile .profile-topic {
     border-bottom: 1px solid #BCBCBC;
     text-align: right;
-    width: 100px;
+    width: 120px;
 }
 
 #jqueryLogo {
@@ -306,7 +309,7 @@ dl h5 {
 html,body {
 	height: 100%;
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Laila', serif;
 }
 
 h1 {
@@ -314,22 +317,52 @@ h1 {
 }
 
 #page-welcome h1, #page-welcome h2, .contact-me {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Laila', serif;
 	color: #fff !important;
-	font-weight: 600;
 }
 
 h2,h3,h4,h5,h6 {
 	font-family: 'Lobster',cursive;
-	color: #555555;
+	color: black;
 }
 
 h2 {
 	font-size:3em;
+	text-shadow: 0px 2px 3px #555;
+}
+
+h3 {
+	opacity: 0.70;
 }
 
 h4,h5 {
-	opacity: 0.80;
+	opacity: 0.40;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.50), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.50), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.50), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.50), rgba(0,0,0,0));
+}
+
+.padAccolade {
+    padding-left: 20px;
+}
+
+dl {
+	margin-bottom: 0px;
 }
 
 /* ==========================================================================

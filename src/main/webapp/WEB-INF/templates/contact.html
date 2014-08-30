@@ -35,14 +35,14 @@
                             <h3 class="col-sm-offset-3" th:text="#{contact.getInTouch.header}"/>
                             <form class="form-horizontal" id="contact-form" role="form" th:object="${emailObject}" th:action="@{/sendEmail}" method="post">
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label" for="name" th:text="#{contact.getInTouch.form.name}"/>
+                                    <label class="col-sm-3 control-label" for="name" th:utext="#{contact.getInTouch.form.name}"/>
                                     <div class="col-sm-9">
                                         <input th:value="*{name}" type="text" name="name" class="form-control" id="name" placeholder="Your name" required="required" maxlength="50" aria-required="true" autocorrect="off" autocapitalize="words" spellcheck="false"/>
                                     </div>
                                 </div>
                                
                                 <div class="form-group">
-                                    <label for="email" class="col-sm-3 control-label" th:text="#{contact.getInTouch.form.email}"/>
+                                    <label for="email" class="col-sm-3 control-label" th:utext="#{contact.getInTouch.form.email}"/>
                                     <div class="col-sm-9">
                                         <input th:value="*{email}" type="email" name="email" class="form-control" id="email" placeholder="Your email address" required="required" maxlength="100" aria-required="true" autocorrect="off" autocapitalize="off" spellcheck="false"/>
                                     </div>
@@ -56,7 +56,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="message" class="col-sm-3 control-label" th:text="#{contact.getInTouch.form.message}"/>
+                                    <label for="message" class="col-sm-3 control-label" th:utext="#{contact.getInTouch.form.message}"/>
                                     <div class="col-sm-9">
                                         <textarea th:value="*{message}" name="message" id="message" class="form-control" required="required" maxlength="5000" rows="10" aria-required="true" autocorrect="off" autocapitalize="off" spellcheck="true"></textarea>
                                     </div>

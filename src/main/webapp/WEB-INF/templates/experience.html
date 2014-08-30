@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
     <body>
         <div th:fragment="experience">
@@ -33,10 +33,11 @@
                                 <div id="garminDetails" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <div class="col-sm-12 justify-text">
-			                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.one}"/></h5>
-			                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.garmin.award.two}"/></h5>
-			                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.one}"/></h5>
-			                                <h5><i class="fa fa-life-ring"/><span th:text="' '+#{experience.garmin.recognition.two}"/></h5>
+                                            <h4><i class="fa fa-trophy"/><span th:text="' '+#{experience.accolades}"/></h4>
+                                            <i class="fa fa-star padAccolade"/><span th:text="' '+#{experience.garmin.award.one}"/><br/>
+                                            <i class="fa fa-star padAccolade"/><span th:text="' '+#{experience.garmin.award.two}"/><br/>
+                                            <i class="fa fa-star padAccolade"/><span th:text="' '+#{experience.garmin.recognition.one}"/><br/>
+                                            <i class="fa fa-star padAccolade"/><span th:text="' '+#{experience.garmin.recognition.two}"/>
 			                                <div class="col-sm-12 blankDiv5" />
 			                                <h4><i class="fa fa-tasks"/><span th:text="' '+#{experience.duties}"/></h4>
 			                                <ul>
@@ -52,20 +53,20 @@
 			                                <h4><i class="fa fa-book"/><span th:text="' '+#{experience.projects}"/></h4>
 			                                <dl class="dl-horizontal">
 			                                    <dt><h5><span th:text="#{experience.garmin.project.one}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.garmin.project.description.one}"/><h5><span th:text="#{experience.garmin.project.my.work.one}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.garmin.project.description.one}"/><p><b th:text="' '+#{experience.garmin.project.my.work.one}"/></p></dd>
 			                                    <dt><h5><span th:text="#{experience.garmin.project.two}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.garmin.project.description.two}"/><h5><span th:text="#{experience.garmin.project.my.work.two}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.garmin.project.description.two}"/><p><b th:text="' '+#{experience.garmin.project.my.work.two}"/></p></dd>
 			                                    <dt><h5><span th:text="#{experience.garmin.project.three}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.garmin.project.description.three}"/><h5><span th:text="#{experience.garmin.project.my.work.three}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.garmin.project.description.three}"/><p><b th:text="' '+#{experience.garmin.project.my.work.three}"/></p></dd>
 			                                    <dt><h5><span th:text="#{experience.garmin.project.four}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.garmin.project.description.four}"/><h5><span th:text="#{experience.garmin.project.my.work.four}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.garmin.project.description.four}"/><p><b th:text="' '+#{experience.garmin.project.my.work.four}"/></p></dd>
 			                                    <dt><h5><span th:text="#{experience.garmin.project.five}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.garmin.project.description.five}"/><h5><span th:text="#{experience.garmin.project.my.work.five}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.garmin.project.description.five}"/><p><b th:text="' '+#{experience.garmin.project.my.work.five}"/></p></dd>
 			                                </dl>
+			                                <h4><i class="fa fa-gear fa-spin"/><span th:text="' '+#{experience.environment}"/></h4>
+                                            <span th:utext="' '+#{experience.garmin.project.technology}"/>
 			                            </div>
-			                            <div class="well col-sm-12">
-			                                <i class="fa fa-gear fa-spin"/><span th:text="' '+#{experience.garmin.project.technology}"/>
-			                            </div>
+			                            
                                   </div>
                                 </div>
                             </div>
@@ -107,13 +108,12 @@
 			                                <h4><i class="fa fa-book"/><span th:text="' '+#{experience.projects}"/></h4>
 			                                <dl class="dl-horizontal">
 			                                    <dt><h5><span th:text="#{experience.nipr.project.one}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.nipr.project.description.one}"/><h5><span th:text="#{experience.nipr.project.my.work.one}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.nipr.project.description.one}"/><p><b th:text="#{experience.nipr.project.my.work.one}"/></p></dd>
 			                                    <dt><h5><span th:text="#{experience.nipr.project.two}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.nipr.project.description.two}"/><h5><span th:text="#{experience.nipr.project.my.work.two}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.nipr.project.description.two}"/><p><b th:text="#{experience.nipr.project.my.work.two}"/></p></dd>
 			                                </dl>
-			                            </div>
-			                            <div class="well col-sm-12">
-			                                <i class="fa fa-gear fa-spin"/><span th:text="' '+#{experience.nipr.project.technology}"/>
+			                                <h4><i class="fa fa-gear fa-spin"/><span th:text="' '+#{experience.environment}"/></h4>
+			                                <span th:utext="' '+#{experience.nipr.project.technology}"/>
 			                            </div>
                                     </div>
                                 </div>             
@@ -142,7 +142,8 @@
                                 <div id="yodleeDetails" class="panel-collapse collapse">
                                     <div class="panel-body">
                                        <div class="col-sm-12 justify-text">
-			                                <h5><i class="fa fa-trophy"/><span th:text="' '+#{experience.yodlee.award.one}"/></h5>
+                                            <h4><i class="fa fa-trophy"/><span th:text="' '+#{experience.accolades}"/></h4>
+                                            <i class="fa fa-star padAccolade"/><span th:text="' '+#{experience.yodlee.award.one}"/>
 			                                <div class="col-sm-12 blankDiv5" />
 			                                <h4><i class="fa fa-tasks"/><span th:text="' '+#{experience.duties}"/></h4>
 			                                <ul>
@@ -159,21 +160,17 @@
 			                                <h4><i class="fa fa-book"/><span th:text="' '+#{experience.projects}"/></h4>
 			                                <dl class="dl-horizontal">
 			                                    <dt><h5><span th:text="#{experience.yodlee.project.one}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.yodlee.project.description.one}"/><h5><span th:text="#{experience.yodlee.project.my.work.one}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.yodlee.project.description.one}"/><p><b th:text="#{experience.yodlee.project.my.work.one}"/></p></dd>
 			                                    <dt><h5><span th:text="#{experience.yodlee.project.two}"/></h5></dt>
-			                                    <dd><span th:text="#{experience.yodlee.project.description.two}"/><h5><span th:text="#{experience.yodlee.project.my.work.two}"/></h5></dd>
+			                                    <dd><span th:text="#{experience.yodlee.project.description.two}"/><p><b th:text="#{experience.yodlee.project.my.work.two}"/></p></dd>
 			                                </dl>
-			                            </div>
-			                            <div class="well col-sm-12">
-			                                <i class="fa fa-gear fa-spin"/><span th:text="' '+#{experience.yodlee.project.technology}"/>
+			                                <h4><i class="fa fa-gear fa-spin"/><span th:text="' '+#{experience.environment}"/></h4>
+			                                <span th:utext="' '+#{experience.yodlee.project.technology}"/>
 			                            </div>
                                     </div>
                                 </div>             
                             </div>
-                            
-                            
                         </div>
-                        
                     </div>
                 </article>
               
