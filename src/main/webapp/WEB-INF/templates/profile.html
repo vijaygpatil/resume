@@ -14,7 +14,7 @@
 	                        <!-- <div class="pull-right">
 	                            <a class="btn btn-primary" th:href="@{/download/Vijay_Patil_Web_Application_Develop.pdf}" download="Vijay_Patil_Web_Application_Develop"><i class="fa fa-print"/> <span th:text="#{profile.print.resume}"/></a>
 	                        </div> -->
-							<h3><span th:text="#{profile.user}+' '"/><span id="myAge"/></h3>
+							<h3><span th:text="#{profile.user}+' '"/><small><span id="myAge"/></small></h3>
 							<h4><i class="fa fa-globe"/>
 								<a target="_blank" href="https://www.google.com/maps/dir/Olathe,+KS/Olathe,+KS" th:text="' '+#{profile.user.current.location}"/>
 								<i class="fa fa-home"/>
@@ -33,13 +33,13 @@
 	                                    <td>
 	                                        <div class="profile-topic"><h4 th:text="#{profile.user.topic.bio}"/></div>
 		                                    <div class="interest-logo">
-		                                        <i class="fa fa-user"/>
+		                                        <i class="fa fa-user text-info"/>
 		                                        <i class="fa fa-graduation-cap"/>
 		                                    </div>
 	                                        <div id="page-profile-facebook"><a target="_blank" href="https://www.facebook.com/patilvijayg" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"/></a></div>
 	                                    </td>
 	                                    <td>
-	                                       <p class="justify-text" th:utext="#{profile.user.topic.bio.description.p1}"/><p class="justify-text" th:utext="#{profile.user.topic.bio.description.p2}"/><p class="justify-text" th:utext="#{profile.user.topic.bio.description.p3}"/>
+	                                       <p class="justify-text text-info" th:utext="#{profile.user.topic.bio.description.p1}"/><p class="justify-text text-info" th:utext="#{profile.user.topic.bio.description.p2}"/><p class="justify-text text-info" th:utext="#{profile.user.topic.bio.description.p3}"/>
 	                                       <hr/>
 	                                    </td>
 	                                </tr>
@@ -53,7 +53,7 @@
 	                                        <div id="page-profile-linkedin"><a target="_blank" href="https://www.linkedin.com/in/patilvijayg" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"/></a></div>
 	                                    </td>
 	                                    <td>
-	                                       <p class="justify-text" th:utext="#{profile.user.topic.experience.description.p1}"/><p class="justify-text" th:utext="#{profile.user.topic.experience.description.p2}"/>
+	                                       <p class="justify-text text-info" th:utext="#{profile.user.topic.experience.description.p1}"/><p class="justify-text text-info" th:utext="#{profile.user.topic.experience.description.p2}"/>
 	                                       <hr/>
 	                                    </td>
 	                                </tr>
@@ -61,23 +61,23 @@
 	                                    <td>
 		                                    <div class="profile-topic"><h4 th:text="#{profile.user.topic.interest}"></h4></div>
 		                                    <div class="interest-logo">
-		                                        <i class="fa fa-coffee"/>
-		                                        <i class="fa fa-leaf"/>
-		                                        <img alt="jQuery" id="jqueryLogo" width="14" height="14" th:src="@{/img/jquery-14.png}"/>
-		                                        <img alt="jQuery" id="jqueryuiLogo" width="14" height="14" th:src="@{/img/jqueryui-14.png}"/>
-		                                        <i class="fa fa-css3"/>
-		                                        <i class="fa fa-html5"/><br/>
+		                                        <i style="color:#644C37" class="fa fa-coffee"/>
+		                                        <i style="color:green" class="fa fa-leaf"/>
+		                                        <img alt="jQueryUI" id="jqueryuiLogo" width="14" height="14" th:src="@{/img/jqueryui-logo.png}"/>
+		                                        <img alt="jQuery" id="jqueryLogo" width="14" height="14" th:src="@{/img/jquery-logo.png}"/>
+		                                        <i style="color:#016FBA" class="fa fa-css3"/>
+		                                        <i style="color:#ec6231" class="fa fa-html5"/><br/>
 		                                        <i class="fa fa-car"/>
-		                                        <i class="fa fa-camera"/>
-		                                        <i class="fa fa-film"/>
+		                                        <i style="color:#0063dc" class="fa fa-camera"/>
+		                                        <i style="color:#febd17" class="fa fa-film"/>
 		                                        <i class="fa fa-music"/>
-		                                        <i class="fa fa-cutlery"/><br/>
+		                                        <i style="color:#CCCCCC" class="fa fa-cutlery"/><br/>
 		                                        <i class="fa fa-apple"/>
-		                                        <i class="fa fa-google"/>
+		                                        <i style="color:#d34836" class="fa fa-google"/>
 		                                    </div>
 	                                    </td>
 	                                    <td>
-	                                       <p class="justify-text" th:utext="#{profile.user.topic.interest.description}"/>
+	                                       <p class="justify-text text-info" th:utext="#{profile.user.topic.interest.description}"/>
 	                                       <hr/>
 	                                    </td>
 	                                </tr>
