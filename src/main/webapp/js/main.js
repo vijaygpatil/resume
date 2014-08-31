@@ -115,7 +115,7 @@ $(document).ready(function() {
 	var today = new Date();
 	var oneYearInMillSecs = 1000*60*60*24*365;
 	var myAge = Math.floor((today.getTime()-myBirthDay.getTime())/(oneYearInMillSecs));
-	$('#myAge').text(myAge);
+	$('#myAge').text(myAge+"yo");
 	
 	$('#marathiLanguage').on('click', function(){
 		window.open('http://en.wikipedia.org/wiki/Marathi_language');
