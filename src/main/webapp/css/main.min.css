@@ -11,11 +11,11 @@
 #degreeCertificate:hover{cursor:pointer;}
 .navbar-nav>li>a{padding-bottom:0 !important;}
 span.hidden-xs{display:inline !important;}
-@media (min-width:300px) and (max-width:767px){span.hidden-xs{display:none !important}
+@media (min-width:300px) and (max-width:840px){span.hidden-xs{display:none !important}
 .navbar-nav{display:-webkit-inline-box;}
 .social-icons .btn{margin-right:5px !important;}
-h1{font-size:50px !important;font-weight:700;}
-h2{font-size:30px !important;font-weight:400;}
+h1{font-size:50px !important;}
+h2{font-size:30px !important;}
 h3{font-size:20px !important;}
 h4{font-size:15px !important;}
 }
