@@ -257,10 +257,6 @@ span.hidden-xs {
 	font-size: 24px;
 } */
 
-#msDegreeGraduationCap i, #beDegreeGraduationCap i, #msDegreeTranscript i, #beDegreeTranscript i {
-	margin-right: 10px;
-}
-
 #flashIcon {
 	cursor: pointer;
 }
