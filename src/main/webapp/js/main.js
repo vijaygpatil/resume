@@ -299,6 +299,10 @@ $(document).ready(function() {
 		window.open('http://patilvijayg.com/resume');
 	});
 	
+	$('#photography1Link').click(function() {
+		window.open('https://www.flickr.com/photos/29386396@N07/sets/72157646708982028/');
+	});
+	
 	$('#wordpressLink').click(function() {
 		window.open('http://patilvijayg.com/wordpress');
 	});

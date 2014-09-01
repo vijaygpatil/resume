@@ -588,10 +588,10 @@ dl {
 	overflow: visible !important;
 }
 
-#resumeLink, #wordpressLink, #dashboardLink, #labLink {
+#resumeLink, #wordpressLink, #dashboardLink, #labLink, #photography1Link {
     cursor: pointer;
 }
 
-#resumeLink:hover, #wordpressLink:hover, #dashboardLink:hover, #labLink:hover {
+#resumeLink:hover, #wordpressLink:hover, #dashboardLink:hover, #labLink:hover, #photography1Link:hover {
     text-decoration:underline;
 }
