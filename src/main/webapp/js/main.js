@@ -129,15 +129,6 @@ $(document).ready(function() {
 		window.open('http://en.wikipedia.org/wiki/Hindi_language');
 	});
 	
-
-	$('#page-contact').waypoint(function(direction) {
-		if (direction == 'down') {
-			$('#page-contact .social-icons').css( "display", "block" ).addClass('animated fadeInLeftBig');
-		}
-		},{	offset : function() {return $(window).height() - $(this).height();},
-			triggerOnce: true,
-	});
-	
 	$('#page-profile').waypoint(function(direction) {
 		if (direction == 'down') {
 			$('#page-profile-facebook').css( "display", "block" ).addClass('animated fadeInLeftBig');
