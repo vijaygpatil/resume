@@ -315,6 +315,15 @@ $(document).ready(function() {
 		window.open('http://patilvijayg.com/dashboard');
 	});
 	
+	$('#photography2Link').click(function() {
+		window.open('https://www.flickr.com/photos/29386396@N07/sets/72157646717570368/');
+	});
+	
+	
+	
+	
+	
+	
 	
 });
 

@@ -108,5 +108,5 @@ dl{margin-bottom:0px;}
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{color:#fff;background-color:gainsboro !important;}
 #grid .mix .overlay{background:gainsboro;}
 .grid-wrapper{overflow:visible !important;}
-#resumeLink, #wordpressLink, #dashboardLink, #labLink, #photography1Link{cursor:pointer;}
-#resumeLink:hover, #wordpressLink:hover, #dashboardLink:hover, #labLink:hover, #photography1Link:hover{text-decoration:underline;}
+#resumeLink, #wordpressLink, #dashboardLink, #labLink, #photography1Link,#photography2Link{cursor:pointer;}
+#resumeLink:hover, #wordpressLink:hover, #dashboardLink:hover, #labLink:hover, #photography1Link:hover, #photography2Link:hover{text-decoration:underline;}
