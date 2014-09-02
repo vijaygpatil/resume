@@ -1,17 +1,24 @@
 $(document).ready(function() {
 	$.vegas('slideshow', {
 		backgrounds : [ {
-			src : 'http://i.imgur.com/UFjWmNZ.jpg',
+			src : 'http://i.imgur.com/2Kv5Af4.jpg',
 			fade : 1000
 		}, {
-			src : 'http://i.imgur.com/9kEAT0R.jpg',
+			src : 'http://i.imgur.com/JyqLJ2R.jpg',
 			fade : 1000
 		}, {
-			src : 'http://i.imgur.com/wwVOutY.jpg',
+			src : 'http://i.imgur.com/qjDo5sS.jpg',
+			fade : 1000
+		}, {
+			src : 'http://i.imgur.com/o6PSOKw.jpg',
+			fade : 1000
+		}, {
+			src : 'http://i.imgur.com/SpN3BZr.jpg',
+			fade : 1000
+		}, {
+			src : 'http://i.imgur.com/skj5PeE.jpg',
 			fade : 1000
 		}]
-	})('overlay', {
-		src : 'img/overlays/01.png'
 	});
 	
 	$("#vegas-next").click(function(){

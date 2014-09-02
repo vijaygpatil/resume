@@ -59,8 +59,8 @@ h4{font-size:15px !important;}
 .blankDiv20{height:20px;}
 dl h5{margin-top:3px !important;}
 html,body{height:100%;width:100%;font-family:'Laila', serif;}
-h1{font-size:4.5em;}
-#page-welcome h1, #page-welcome h2, .contact-me{font-family:'Laila', serif;color:#fff !important;}
+h1{font-size:4.5em;text-shadow: 0px 2px 3px #555;}
+#page-welcome h1, #page-welcome h2, .contact-me{font-family:'Laila', serif;color:#fff !important;text-shadow: 0px 2px 3px #555;}
 h2,h3,h4,h5,h6{font-family:'Lobster',cursive;color:black;}
 h2{font-size:3em;text-shadow:0px 2px 3px #555;}
 h3{opacity:0.70;}
