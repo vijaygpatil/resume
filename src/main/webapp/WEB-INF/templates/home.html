@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 		
-	<head>
-		<meta charset="UTF-8"/>
+    <head>
+        <meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 		<meta name="keywords" content="Vijay Patil, Vijay, Patil, Swati Deshmukh, Arnav Patil, Illinois Institute of Technology, Chicago, NIPR, National Insurance Producers Registry, NAIC, National Association of Insurance Commissioners, Egen Solutions, Yodlee, Garmin, Navapur, Nandurbar, Dombivali, Somaiya"/>
 		<meta name="Description" content="Web Development Enthusiast!!! Presently working as a Internet Application Developer with Garmin. Specialized in front-end and back-end web development"/>
@@ -52,5 +52,21 @@
 		<script th:src="@{/js/main.js}"></script>
 		<script th:src="@{/js/jquery.magnific-popup.min.js}"></script>
 		<script th:src="@{/js/jquery.isotope.min.js}"></script>
-	</body>
+
+		<script type="text/javascript">
+			var $buoop = {};
+			$buoop.ol = window.onload;
+			window.onload = function() {
+				try {
+					if ($buoop.ol)
+						$buoop.ol();
+				} catch (e) {
+				}
+				var e = document.createElement("script");
+				e.setAttribute("type", "text/javascript");
+				e.setAttribute("src", "//browser-update.org/update.js");
+				document.body.appendChild(e);
+			}
+		</script>
+</body>
 </html>
