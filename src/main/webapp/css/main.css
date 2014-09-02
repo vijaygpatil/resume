@@ -96,12 +96,12 @@ span.hidden-xs {
 	background: #fff;
 }
 
-#page-experience {
+#page-education {
 	padding: 50px 0;
 	background: #f7f7f7;
 }
 
-#page-education {
+#page-experience {
 	padding: 50px 0;
 	background: #fff;
 }
@@ -603,4 +603,50 @@ dl {
 
 #resumeLink:hover, #wordpressLink:hover, #dashboardLink:hover, #labLink:hover, #photography1Link:hover, #photography2Link:hover {
     text-decoration:underline;
+}
+
+
+
+
+
+@media print {
+    body img {
+       display:none;
+    }
+    
+    #page-welcome, #page-profile, #page-portfolio, #page-contact, #page-footer {
+       display:none;
+    }
+    
+    #header {
+       display:block;
+       border-bottom:2px solid #000;
+       padding-bottom:5px;
+    }
+    
+    section {
+       padding-top:0 !important;
+       padding-bottom:0 !important;
+    }
+    
+    section h2 {
+       margin-top:0 !important;
+       margin-bottom:0 !important;
+    }
+    
+    #page-skills, #page-experience {
+       border-bottom:2px solid #000;
+    }
+    
+    #page-skills #strength {
+       display:none;
+    }
+    
+    #page-experience .panel-heading a {
+       display:none;
+    }
+    
+    #page-education .panel-heading a {
+       display:none;
+    }
 }

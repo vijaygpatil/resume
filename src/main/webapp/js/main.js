@@ -319,11 +319,14 @@ $(document).ready(function() {
 		window.open('https://www.flickr.com/photos/29386396@N07/sets/72157646717570368/');
 	});
 	
-	
-	
-	
-	
-	
-	
+	$('#printResume').click(function() {
+		$('#niprDetails').addClass('in');
+		$('#yodleeDetails').addClass('in');
+		$('#beDegreeDetails').addClass('in');
+		window.print();
+		$('#niprDetails').removeClass('in');
+		$('#yodleeDetails').removeClass('in');
+		$('#beDegreeDetails').removeClass('in');
+	});
 });
 
