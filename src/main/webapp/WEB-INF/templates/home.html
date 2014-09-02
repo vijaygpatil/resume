@@ -33,6 +33,16 @@
 		<link rel="author" href="https://plus.google.com/+VijayPatilG"/>
 	</head>
 	<body>
+	   <div id="header" class="container">
+	       <div class="row">
+	            <header>
+                    <h1 class="text-center text-uppercase"><span th:text="#{welcome.user.name}"/></h1>
+                </header>
+                <i class="fa fa-envelope-o pull-left"><span th:text="' '+#{contact.contactInfo.email}"/></i>
+                <i class="fa fa-phone pull-right"><span th:text="' '+#{contact.contactInfo.phone}"/></i>
+	       </div>
+	   </div>
+	   
 		<div class="container" th:include="navigation :: menu"/> 
 		<section id="page-welcome" class="page-welcome" th:include="welcome :: welcome"/>
 		<section id="page-profile" class="page-profile" th:include="profile :: profile"/>	
