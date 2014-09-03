@@ -1,23 +1,17 @@
 $(document).ready(function() {
 	$.vegas('slideshow', {
 		backgrounds : [ {
-			src : 'http://i.imgur.com/2Kv5Af4.jpg',
-			fade : 1000
+			src : 'http://i.imgur.com/OcyOdkY.jpg',
+			fade : 3000
 		}, {
-			src : 'http://i.imgur.com/JyqLJ2R.jpg',
-			fade : 1000
+			src : 'http://i.imgur.com/5BgnGht.jpg',
+			fade : 3000
 		}, {
-			src : 'http://i.imgur.com/qjDo5sS.jpg',
-			fade : 1000
+			src : 'http://i.imgur.com/GkFGBcb.jpg',
+			fade : 3000
 		}, {
-			src : 'http://i.imgur.com/o6PSOKw.jpg',
-			fade : 1000
-		}, {
-			src : 'http://i.imgur.com/SpN3BZr.jpg',
-			fade : 1000
-		}, {
-			src : 'http://i.imgur.com/skj5PeE.jpg',
-			fade : 1000
+			src : 'http://i.imgur.com/oubI4OH.jpg',
+			fade : 3000
 		}]
 	});
 	
@@ -327,13 +321,27 @@ $(document).ready(function() {
 	});
 	
 	$('#printResume').click(function() {
-		$('#niprDetails').addClass('in');
-		$('#yodleeDetails').addClass('in');
-		$('#beDegreeDetails').addClass('in');
+		$('#garminDetails, #niprDetails, #yodleeDetails, #msDegreeDetails, #beDegreeDetails').addClass('in');
 		window.print();
-		$('#niprDetails').removeClass('in');
-		$('#yodleeDetails').removeClass('in');
-		$('#beDegreeDetails').removeClass('in');
+		$('#niprDetails, #yodleeDetails, #beDegreeDetails').removeClass('in');
 	});
+	
+	var beforePrint = function() {
+		$('#garminDetails, #niprDetails, #yodleeDetails, #msDegreeDetails, #beDegreeDetails').addClass('in');
+    };
+    var afterPrint = function() {
+    	$('#niprDetails, #yodleeDetails, #beDegreeDetails').removeClass('in');
+    };
+
+    if (window.matchMedia) {
+        var mediaQueryList = window.matchMedia('print');
+        mediaQueryList.addListener(function(mql) {
+            if (mql.matches) {
+                beforePrint();
+            } else {
+                afterPrint();
+            }
+        });
+    }
 });
 
