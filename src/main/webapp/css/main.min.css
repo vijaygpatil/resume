@@ -18,6 +18,7 @@ h1{font-size:50px !important;}
 h2{font-size:30px !important;}
 h3{font-size:20px !important;}
 h4{font-size:15px !important;}
+#page-welcome header{padding-top:23%;}
 }
 #page-contact{padding:50px 0;background:#f7f7f7;}
 #page-footer{padding:20px 0;background:#fff;}
