@@ -38,8 +38,11 @@
 	            <header>
                     <h1 class="text-center text-uppercase"><span th:text="#{welcome.user.name}"/></h1>
                 </header>
-                <i class="fa fa-envelope-o pull-left"><span th:text="' '+#{contact.contactInfo.email}"/></i>
-                <i class="fa fa-phone pull-right"><span th:text="' '+#{contact.contactInfo.phone}"/></i>
+                <div id="textbox">
+					<p class="alignleft"><i class="fa fa-envelope-o" style="text-align:left;"><span th:text="' '+#{contact.contactInfo.email}"/></i></p>
+					<p class="aligncenter"><i class="fa fa-phone" style="text-align:right;"><span th:text="' '+#{contact.contactInfo.phone}"/></i></p>
+					<p class="alignright"><i class="fa fa-globe" style="text-align:right;"><span th:text="' '+#{contact.contactInfo.website}"/></i></p>
+                </div>
 	       </div>
 	   </div>
 	   

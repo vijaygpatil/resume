@@ -123,6 +123,24 @@ dl{margin-bottom:0px;}
 	display:none;
 }
 
+.alignleft {
+	float: left;
+	width: 33.33333%;
+	text-align: left;
+}
+
+.aligncenter {
+	float: left;
+	width: 33.33333%;
+	text-align: center;
+}
+
+.alignright {
+	float: left;
+	width: 33.33333%;
+	text-align: right;
+}
+
 @media print {
 	body img {
 	   display:none;
@@ -135,7 +153,6 @@ dl{margin-bottom:0px;}
 	#header {
 	   display:block;
 	   border-bottom:2px solid #000;
-	   padding-bottom:5px;
 	}
 	
 	section {
@@ -163,4 +180,19 @@ dl{margin-bottom:0px;}
 	#page-education .panel-heading a {
        display:none;
     }
+    
+    h1 {
+        margin-top:0 !important;
+	    font-weight:700;
+	}
+	
+	#msDegreeDetails #courses {
+	   display:none;
+	}
+	
+	#beDegreeDetails #courses {
+	   display:none;
+	}
 }
+
+
