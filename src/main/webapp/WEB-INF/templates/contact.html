@@ -3,11 +3,11 @@
     <body>
         <div th:fragment="contact">
             <div class="container">
-	            <header>
+	            <header role="banner">
 	                <h2 class="section-title"><i class="fa fa-envelope"/><span th:text="' '+#{contact.header}"/></h2>
 	            </header>
 	            
-	            <article>
+	            <article role="main">
 	                <div class="row well">
 	                   <div id="messageSuccess" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" th:if="${#httpServletRequest.getParameter('status') == 'success'}">
                             <div class="alert alert-success">
