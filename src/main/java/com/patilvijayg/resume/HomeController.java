@@ -23,12 +23,7 @@ public class HomeController {
 	private SimpleMailMessage simpleMailMessage;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String redirectToHome(Model model) {
-		return "redirect:/home";
-	}
-	
-	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public String home(Model model) {
+	public String showHome(Model model) {
 		logger.info("Welcome home!");
 		model.addAttribute("emailObject", new EmailObject());
 		return "home";
