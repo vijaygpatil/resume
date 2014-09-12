@@ -47,16 +47,16 @@
           <script src="/resume/js/respond.min.js"></script>
         <![endif]-->
 	</head>
-	<body>
+	<body itemscope="itemscope" itemtype="http://schema.org/Person">
 	   <div id="header" class="container">
 	       <div class="row">
 	            <header>
-                    <h1 class="text-center text-uppercase"><span th:text="#{welcome.user.name}"/></h1>
+                    <h1 class="text-center text-uppercase" itemprop="name"><span th:text="#{welcome.user.name}"/></h1>
                 </header>
                 <div id="textbox">
-					<p class="alignleft"><i class="fa fa-envelope-o" style="text-align:left;"><span th:text="' '+#{contact.contactInfo.email}"/></i></p>
-					<p class="aligncenter"><i class="fa fa-phone" style="text-align:right;"><span th:text="' '+#{contact.contactInfo.phone}"/></i></p>
-					<p class="alignright"><i class="fa fa-globe" style="text-align:right;"><span th:text="' '+#{contact.contactInfo.website}"/></i></p>
+					<p itemprop="email" class="alignleft"><i class="fa fa-envelope-o" style="text-align:left;"><span th:text="' '+#{contact.contactInfo.email}"/></i></p>
+					<p itemprop="telephone" class="aligncenter"><i class="fa fa-phone" style="text-align:right;"><span th:text="' '+#{contact.contactInfo.phone}"/></i></p>
+					<p itemprop="url" class="alignright"><i class="fa fa-globe" style="text-align:right;"><span th:text="' '+#{contact.contactInfo.website}"/></i></p>
                 </div>
 	       </div>
 	   </div>
