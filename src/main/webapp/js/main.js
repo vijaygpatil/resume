@@ -321,16 +321,20 @@ $(document).ready(function() {
 	});
 	
 	$('#printResume').click(function() {
-		$('#garminDetails, #niprDetails, #yodleeDetails, #msDegreeDetails, #beDegreeDetails').addClass('in');
+		$('#garminDetails').addClass('in');
+		$('#niprDetails, #yodleeDetails, #msDegreeDetails, #beDegreeDetails').removeClass('in');
 		window.print();
+		$('#garminDetails, #msDegreeDetails').addClass('in');
 		$('#niprDetails, #yodleeDetails, #beDegreeDetails').removeClass('in');
 	});
 	
 	var beforePrint = function() {
-		$('#garminDetails, #niprDetails, #yodleeDetails, #msDegreeDetails, #beDegreeDetails').addClass('in');
+		$('#garminDetails').addClass('in');
+		$('#niprDetails, #yodleeDetails, #msDegreeDetails, #beDegreeDetails').removeClass('in');
     };
     var afterPrint = function() {
-    	$('#niprDetails, #yodleeDetails, #beDegreeDetails').removeClass('in');
+    	$('#garminDetails, #msDegreeDetails').addClass('in');
+		$('#niprDetails, #yodleeDetails, #beDegreeDetails').removeClass('in');
     };
 
     if (window.matchMedia) {

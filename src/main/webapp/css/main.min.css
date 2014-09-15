@@ -162,7 +162,10 @@ dl{margin-bottom:0px;}
 	
 	#workSamples {
 		display:block;
-		border-bottom:2px solid #000;
+	}
+	
+	#page-experience #duties {
+	   display:none;
 	}
 	
 	section {
