@@ -74,6 +74,20 @@
 		<section id="page-education" class="page-education" th:include="education :: education"/>
 		<section id="page-portfolio" class="page-portfolio" th:include="portfolio :: portfolio"/>
 		<section id="page-contact" class="page-contact" th:include="contact :: contact"/>
+		<div id="workSamples" class="container">
+		      <header role="banner">
+                  <h2 class="section-title"><i class="fa fa-external-link-square"/><span th:text="' '+#{worksamples.header}"/></h2>
+              </header>
+              <article role="main">
+			      <div class="row">
+			          <ul id="workSampleList">
+		                  <li><a target="_blank" href="http://patilvijayg.com/resume">Profile</a></li>
+		                  <li><a target="_blank" href="http://patilvijayg.com/wordpress">Blog</a></li>
+		                  <li><a target="_blank" href="https://github.com/vijaygpatil">Repository</a></li>
+		              </ul>
+	              </div> 
+              </article>
+		</div> 
 		<div id="page-footer" class="page-footer" th:include="footer :: footer" role="contentinfo"/>
 		
 		<!-- JavaScripts -->

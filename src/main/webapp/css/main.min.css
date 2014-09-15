@@ -124,6 +124,10 @@ dl{margin-bottom:0px;}
 	display:none;
 }
 
+#workSamples {
+	display:none;
+}
+
 .alignleft {
 	float: left;
 	width: 33.33333%;
@@ -156,6 +160,11 @@ dl{margin-bottom:0px;}
 	   border-bottom:2px solid #000;
 	}
 	
+	#workSamples {
+		display:block;
+		border-bottom:2px solid #000;
+	}
+	
 	section {
 	   padding-top:0 !important;
 	   padding-bottom:0 !important;
@@ -166,7 +175,7 @@ dl{margin-bottom:0px;}
 	   margin-bottom:0 !important;
 	}
 	
-	#page-skills, #page-experience {
+	#page-skills, #page-experience, #page-education {
 	   border-bottom:2px solid #000;
 	}
 	
